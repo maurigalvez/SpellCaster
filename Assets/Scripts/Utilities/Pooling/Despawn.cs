@@ -17,6 +17,7 @@ namespace Logic
             // validate 
             if (poolInstance != null)
             {
+                Debug.Log("Return " + Time.time);
                 poolInstance.Return();
             }
             else

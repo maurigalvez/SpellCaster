@@ -37,19 +37,18 @@ namespace Logic
             if(m_PoolID.Length ==0 || m_SpawnTargets.Length == 0)
             {
                 return Status.Error;
-            }
-
-            GameObject instance = PoolManager.Instance.NextInstance(m_PoolID);//m_Pools[Random.Range(0, m_Pools.Length)]);
-            if(instance == null)
+            }           
+            if(!PoolManager.Instance.Contains(m_PoolID))
             {
                 return Status.Failure;
             }
-            Spawn(instance);
+            Spawn(PoolManager.Instance.NextInstance(m_PoolID));
             return Status.Success;
         }
 
         public override void Spawn(GameObject instance)
         {
+            Debug.Log("Spawn " + Time.time);
             // get position
             Transform targetTransform = m_SpawnTargets[Random.Range(0, m_SpawnTargets.Length)];
             Vector3 targetPosition = targetTransform.position;

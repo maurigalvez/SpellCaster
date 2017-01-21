@@ -49,7 +49,15 @@ namespace Logic
             m_Pools.Clear();
             yield return null;
         }
-
+        /// <summary>
+        /// check if pool manager contains given pool id
+        /// </summary>
+        /// <param name="m_PoolID"></param>
+        /// <returns></returns>
+        public bool Contains(string m_PoolID)
+        {
+            return m_PoolMap.ContainsKey(m_PoolID);
+        }
         /// <summary>
         /// Returns next available instance in pool with given ID. If ID is invalid, or not enough instances are available, it returns null.
         /// </summary>

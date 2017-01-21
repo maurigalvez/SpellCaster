@@ -117,7 +117,7 @@ namespace Logic
             }
 
             // check distance between origin and target
-            if ((m_Origin.position - m_Target.position).magnitude <= m_MinimumDistance)
+            if (Vector3.Distance(m_Origin.position,m_Target.position) <= m_MinimumDistance)
             {
                 return Status.Success;
             }

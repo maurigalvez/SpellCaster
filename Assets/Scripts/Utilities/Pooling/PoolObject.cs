@@ -37,9 +37,5 @@ namespace Logic
             m_Pool.ReturnInstance(this.gameObject);
         }
 
-        private void OnDisable()
-        {
-            Return();
-        }
     }
 }

@@ -500,6 +500,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1000011242420958
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 4000010704173962}
+  m_Layer: 0
+  m_Name: Spawn Explosion
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1000011288848260
 GameObject:
   m_ObjectHideFlags: 1
@@ -1470,6 +1485,19 @@ Transform:
   - {fileID: 4000011693949172}
   m_Father: {fileID: 4000013675307390}
   m_RootOrder: 2
+--- !u!4 &4000010704173962
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011242420958}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 4000013861098020}
+  m_RootOrder: 0
 --- !u!4 &4000010711419044
 Transform:
   m_ObjectHideFlags: 1
@@ -1740,7 +1768,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 4000013861098020}
-  m_RootOrder: 1
+  m_RootOrder: 2
 --- !u!4 &4000011693949172
 Transform:
   m_ObjectHideFlags: 1
@@ -1835,7 +1863,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 4000013861098020}
-  m_RootOrder: 0
+  m_RootOrder: 1
 --- !u!4 &4000011850605320
 Transform:
   m_ObjectHideFlags: 1
@@ -2414,6 +2442,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
+  - {fileID: 4000010704173962}
   - {fileID: 4000011824646734}
   - {fileID: 4000011591558708}
   m_Father: {fileID: 4000012621742064}

@@ -29,8 +29,7 @@ namespace Logic
         /// Coroutine used to translate projectile
         /// </summary>
         protected void Update()
-        {
-          
+        {          
             m_Transform.position += m_Transform.forward * m_ProjectileInfo.Speed * Time.deltaTime;
             
         }
@@ -58,8 +57,17 @@ namespace Logic
                 projTarget.ApplyDamage(m_ProjectileInfo.Damage);
             }
 
-            // Disable this gameobject
-            this.gameObject.SetActive(false);
+            // check if this object is a pool object
+            PoolObject poolObject = this.GetComponent<PoolObject>();
+            if (poolObject != null)
+            {
+                poolObject.Return();
+            }
+            else
+            {
+                // Disable this gameobject
+                this.gameObject.SetActive(false);
+            }
         }
     }
 }

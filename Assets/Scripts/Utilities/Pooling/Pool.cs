@@ -6,14 +6,17 @@ using System.Collections;
 using System.Collections.Generic;
 namespace Logic
 {
+    [System.Serializable]
     public class Pool 
     {
         /// <summary>
         /// List of instances created
         /// </summary>
         [SerializeField]
-        private Queue<GameObject> m_Instances = null;
+        private Stack<GameObject> m_Instances = null;
+        [SerializeField]
         private PoolInfo m_Info = null;
+        [SerializeField]
         private int m_CurrentSpawned = 0;
         /// <summary>
         /// Constructor for this pool 
@@ -22,8 +25,21 @@ namespace Logic
         public Pool(PoolInfo info)
         {
             // Initialize list
-            m_Instances = new Queue<GameObject>();
+            m_Instances = new Stack<GameObject>();
             m_Info = info;
+            GameObject instance = null; 
+            for(int currentInstance = 0; currentInstance < m_Info.m_InstanceNumber; currentInstance++)
+            {
+                // create new game object instance
+                instance = GameObject.Instantiate(m_Info.m_ObjectPrefab);
+                instance.SetActive(false);
+                // Add pool object component and set properties
+                PoolObject pObject = instance.AddComponent<PoolObject>();
+                pObject.m_Pool = this;
+                pObject.m_Lifetime = m_Info.m_LifeTime;
+                // add to queue
+                m_Instances.Push(instance);
+            }
         }
 
         /// <summary>
@@ -31,36 +47,12 @@ namespace Logic
         /// </summary>
         /// <returns>Next available instance, otherwise it returns null.</returns>
         public GameObject NextInstance()
-        {
-            GameObject instance = null;
-            if (m_CurrentSpawned < m_Info.m_InstanceNumber)
+        {           
+            if(m_Instances.Count > 0)
             {
-
-                instance = GameObject.Instantiate(m_Info.m_ObjectPrefab);
-                instance.SetActive(false);
-                m_CurrentSpawned++;
-
-            }
-            // check if enough instances have been created
-            else if (m_Instances.Count == 0)
-            {
-                return instance;
-            }
-            else
-            {
-                // return current instance
-                instance = m_Instances.Dequeue();
-            }
-            if (instance != null)
-            {               
-                if (instance.GetComponent<PoolObject>() == null)
-                {
-                    PoolObject pObject = instance.AddComponent<PoolObject>();
-                    pObject.m_Pool = this;
-                    pObject.m_Lifetime = m_Info.m_LifeTime;
-                }
-            }            
-            return instance;          
+                return m_Instances.Pop();
+            }       
+            return null;          
         }
         /// <summary>
         /// Returns instance to pool
@@ -69,8 +61,8 @@ namespace Logic
         public void ReturnInstance(GameObject instance)
         {           
             instance.transform.rotation = Quaternion.identity;
-            m_Instances.Enqueue(instance);
             instance.SetActive(false);
+            m_Instances.Push(instance);            
         }
     }
 }

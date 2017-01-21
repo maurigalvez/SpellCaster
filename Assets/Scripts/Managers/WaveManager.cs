@@ -4,6 +4,17 @@ using System.Collections;
 namespace Logic
 {
     /// <summary>
+    /// Struct used to specify different spawn rates for a wave.
+    /// </summary>
+    [System.Serializable]
+    struct WaveSpawnStage
+    {
+        [SerializeField]
+        public float Time;
+        [SerializeField]
+        public Vector2 SpawnRate; 
+    }
+    /// <summary>
     /// Manager in charge of executing spawn of enemies actions and updating timers.
     /// </summary>
     public class WaveManager : MonoBehaviour
@@ -26,9 +37,11 @@ namespace Logic
         /// <summary>
         /// Range that will be used to spawn enemies between waves.
         /// </summary>
-        [Tooltip("Time In Seconds between entities spawn")]
+        [Tooltip("Spawn rate stages based in time")]
         [SerializeField]
-        private Vector2 m_SpawnTimeRangeInSeconds = new Vector2(2, 5);
+        private WaveSpawnStage[] m_SpawnStages;
+
+        private int m_CurrentSpawnStage = 0;
 
         [Tooltip("Percentage that will be ducked from time from entity spawn every wave.")]
         [SerializeField]
@@ -41,8 +54,8 @@ namespace Logic
         /// <summary>
         /// ID of UI text that will display wave number
         /// </summary>
-        /*[SerializeField]
-        private string m_WaveNumberDisplayID = "";*/
+        [SerializeField]
+        private string m_WaveNumberDisplayID = "";
         /// <summary>
         /// Storage for current float var
         /// </summary>
@@ -73,7 +86,10 @@ namespace Logic
         private float m_TimeUntilNextSpawn = 0;
         private Image m_TimerBar = null;
         //private Text m_TimeDisplay = null;
-        //private Text m_NumberDisplay = null;
+        /// <summary>
+        /// Display for wave number
+        /// </summary>
+        private Text m_NumberDisplay = null;
 
         private void Start()
         {
@@ -92,7 +108,7 @@ namespace Logic
             {
                 m_Timer.Value = m_TimePerWaveInSeconds;               
             }
-            /*// obtain number display
+            // obtain number display
             object display = GlobalVariables.Instance.GetValue(m_WaveNumberDisplayID);
             // validate diplay
             if(display != null)
@@ -103,7 +119,7 @@ namespace Logic
                     m_CurrentWaveNumber.Value = 0;
                     m_CurrentWaveNumber.OnValueChanged += UpdateWaveNumberDisplay;
                 }
-            }*/
+            }
             // obtain time display
             /*object display = GlobalVariables.Instance.GetValue(m_TimerDisplayID);
             if(display != null)
@@ -121,15 +137,15 @@ namespace Logic
         /// <summary>
         /// Updates number display with current wave number
         /// </summary>
-        /*private void UpdateWaveNumberDisplay()
+        private void UpdateWaveNumberDisplay()
         {
-            m_NumberDisplay.text = m_CurrentWaveNumber.ToString();
+            m_NumberDisplay.text = m_CurrentWaveNumber.Value.ToString() + " / " + m_NumberOfWaves;
         }
 
         /// <summary>
         /// Updates time display with current timer value
         /// </summary>
-        private void UpdateTimeDisplay()
+        /*private void UpdateTimeDisplay()
         {
             float timer = (float)m_Timer.Value;
             m_TimeDisplay.text = timer.ToString("00");
@@ -141,24 +157,51 @@ namespace Logic
         private IEnumerator UpdateWave()
         {
             m_CurrentWaveNumber.Value = (int)m_CurrentWaveNumber.Value + 1;
-            float timer = (float)m_Timer.Value;
-            float nextSpawnTime = Random.Range(m_SpawnTimeRangeInSeconds.x, m_SpawnTimeRangeInSeconds.y);
+            // Reset timer
+            float timer = m_TimePerWaveInSeconds;
+            // reset spawn rate
+            m_CurrentSpawnStage = 0;
+            // obtain spawn time from current index
+            float nextSpawnTime = Random.Range(m_SpawnStages[m_CurrentSpawnStage].SpawnRate.x, m_SpawnStages[m_CurrentSpawnStage].SpawnRate.y);
+            // check if timer hasn't run out
             while (timer > 0)
             {
-                yield return new WaitForFixedUpdate();
+                yield return new WaitForSeconds(1);
                 // update timer
-                timer -= Time.fixedDeltaTime;
+                timer--;
                 m_Timer.Value = timer;
                 m_TimerBar.fillAmount = timer / m_TimePerWaveInSeconds;
                 // update spawn time
-                nextSpawnTime -= Time.fixedDeltaTime * (1 + m_SpawnDecrementPerWave * 0.01f);
+                nextSpawnTime -= 1 * (1 + m_SpawnDecrementPerWave * 0.01f);
+                // Update wave stage
+                UpdateWaveStage(timer);
+                // check if spawn time has run out
                 if(nextSpawnTime <= 0)
                 {
                     m_SpawnAction.UpdateAction();
-                    nextSpawnTime = Random.Range(m_SpawnTimeRangeInSeconds.x, m_SpawnTimeRangeInSeconds.y);
+                    nextSpawnTime = Random.Range(m_SpawnStages[m_CurrentSpawnStage].SpawnRate.x, m_SpawnStages[m_CurrentSpawnStage].SpawnRate.y);
                 }
             }
+            // Fire delay for next waave
             StartCoroutine("WaitForNextWave");
+        }
+
+        /// <summary>
+        /// Updates index of current wave stage
+        /// </summary>
+        /// <param name="currentTime"></param>
+        private void UpdateWaveStage(float currentTime)
+        {
+            // validate index
+            if (m_CurrentSpawnStage < m_SpawnStages.Length - 1)
+            {
+                // check if index should increment for next avaiable stage
+                if(currentTime <= m_SpawnStages[m_CurrentSpawnStage + 1].Time)
+                {
+                    // increase index
+                    m_CurrentSpawnStage++;
+                }
+            }
         }
 
         /// <summary>
