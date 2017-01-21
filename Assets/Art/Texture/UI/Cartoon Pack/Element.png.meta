@@ -1,0 +1,1626 @@
+fileFormatVersion: 2
+guid: 47c85210e66613c44808e67d489653b5
+timeCreated: 1484499456
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Element_0
+    21300002: Element_1
+    21300004: Element_2
+    21300006: Element_3
+    21300008: Element_4
+    21300010: Element_5
+    21300012: Element_6
+    21300014: Element_7
+    21300016: Element_8
+    21300018: Element_9
+    21300020: Element_10
+    21300022: Element_11
+    21300024: Element_12
+    21300026: Element_13
+    21300028: Element_14
+    21300030: Element_15
+    21300032: Element_16
+    21300034: Element_17
+    21300036: Element_18
+    21300038: Element_19
+    21300040: Element_20
+    21300042: Element_21
+    21300044: Element_22
+    21300046: Element_23
+    21300048: Element_24
+    21300050: Element_25
+    21300052: Element_26
+    21300054: Element_27
+    21300056: Element_28
+    21300058: Element_29
+    21300060: Element_30
+    21300062: Element_31
+    21300064: Element_32
+    21300066: Element_33
+    21300068: Element_34
+    21300070: Element_35
+    21300072: Element_36
+    21300074: Element_37
+    21300076: Element_38
+    21300078: Element_39
+    21300080: Element_40
+    21300082: Element_41
+    21300084: Element_42
+    21300086: Element_43
+    21300088: Element_44
+    21300090: Element_45
+    21300092: Element_46
+    21300094: Element_47
+    21300096: Element_48
+    21300098: Element_49
+    21300100: Element_50
+    21300102: Element_51
+    21300104: Element_52
+    21300106: Element_53
+    21300108: Element_54
+    21300110: Element_55
+    21300112: Element_56
+    21300114: Element_57
+    21300116: Element_58
+    21300118: Element_59
+    21300120: Element_60
+    21300122: Element_61
+    21300124: Element_62
+    21300126: Element_63
+    21300128: Element_64
+    21300130: Element_65
+    21300132: Element_66
+    21300134: Element_67
+    21300136: Element_68
+    21300138: Element_69
+    21300140: Element_70
+    21300142: Element_71
+    21300144: Element_72
+    21300146: Element_73
+    21300148: Element_74
+    21300150: Element_75
+    21300152: Element_76
+    21300154: Element_77
+    21300156: Element_78
+    21300158: Element_79
+    21300160: Element_80
+    21300162: Element_81
+    21300164: Element_82
+    21300166: Element_83
+    21300168: Element_84
+    21300170: Element_85
+    21300172: Element_86
+    21300174: Element_87
+    21300176: Element_88
+    21300178: Element_89
+    21300180: Element_90
+    21300182: Element_91
+    21300184: Element_92
+    21300186: Element_93
+    21300188: Element_94
+    21300190: Element_95
+    21300192: Element_96
+    21300194: Element_97
+    21300196: Element_98
+    21300198: Element_99
+    21300200: Element_100
+    21300202: Element_101
+    21300204: Element_102
+    21300206: Element_103
+    21300208: Element_104
+    21300210: Element_105
+    21300212: Element_106
+    21300214: Element_107
+    21300216: Element_108
+    21300218: Element_109
+    21300220: Element_110
+    21300222: Element_111
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Element_0
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 3798
+        width: 189
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_1
+      rect:
+        serializedVersion: 2
+        x: 2156
+        y: 3807
+        width: 172
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_2
+      rect:
+        serializedVersion: 2
+        x: 2336
+        y: 3798
+        width: 342
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_3
+      rect:
+        serializedVersion: 2
+        x: 2861
+        y: 3566
+        width: 232
+        height: 344
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_4
+      rect:
+        serializedVersion: 2
+        x: 3051
+        y: 3798
+        width: 258
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_5
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 3626
+        width: 121
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_6
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 3626
+        width: 135
+        height: 138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_7
+      rect:
+        serializedVersion: 2
+        x: 1054
+        y: 3626
+        width: 138
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_8
+      rect:
+        serializedVersion: 2
+        x: 1201
+        y: 3626
+        width: 128
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_9
+      rect:
+        serializedVersion: 2
+        x: 1338
+        y: 3617
+        width: 129
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_10
+      rect:
+        serializedVersion: 2
+        x: 1476
+        y: 3626
+        width: 155
+        height: 145
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_11
+      rect:
+        serializedVersion: 2
+        x: 1640
+        y: 3626
+        width: 146
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_12
+      rect:
+        serializedVersion: 2
+        x: 1803
+        y: 3617
+        width: 155
+        height: 155
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_13
+      rect:
+        serializedVersion: 2
+        x: 2236
+        y: 3610
+        width: 75
+        height: 145
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_14
+      rect:
+        serializedVersion: 2
+        x: 2319
+        y: 3686
+        width: 69
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_15
+      rect:
+        serializedVersion: 2
+        x: 2397
+        y: 3686
+        width: 68
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_16
+      rect:
+        serializedVersion: 2
+        x: 2474
+        y: 3686
+        width: 69
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_17
+      rect:
+        serializedVersion: 2
+        x: 3094
+        y: 3566
+        width: 421
+        height: 232
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_18
+      rect:
+        serializedVersion: 2
+        x: 3516
+        y: 3566
+        width: 197
+        height: 232
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_19
+      rect:
+        serializedVersion: 2
+        x: 2319
+        y: 3609
+        width: 69
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_20
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 3445
+        width: 267
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_21
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 3428
+        width: 223
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_22
+      rect:
+        serializedVersion: 2
+        x: 1820
+        y: 2955
+        width: 69
+        height: 619
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_23
+      rect:
+        serializedVersion: 2
+        x: 1984
+        y: 3282
+        width: 447
+        height: 240
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_24
+      rect:
+        serializedVersion: 2
+        x: 2973
+        y: 3291
+        width: 215
+        height: 240
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_25
+      rect:
+        serializedVersion: 2
+        x: 3197
+        y: 3291
+        width: 412
+        height: 240
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_26
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 2989
+        width: 430
+        height: 430
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_27
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 2989
+        width: 430
+        height: 430
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_28
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 3299
+        width: 692
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_29
+      rect:
+        serializedVersion: 2
+        x: 1106
+        y: 3153
+        width: 103
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_30
+      rect:
+        serializedVersion: 2
+        x: 3111
+        y: 3041
+        width: 189
+        height: 232
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_31
+      rect:
+        serializedVersion: 2
+        x: 3318
+        y: 3041
+        width: 197
+        height: 232
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_32
+      rect:
+        serializedVersion: 2
+        x: 1984
+        y: 3015
+        width: 292
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_33
+      rect:
+        serializedVersion: 2
+        x: 2285
+        y: 3015
+        width: 68
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_34
+      rect:
+        serializedVersion: 2
+        x: 2362
+        y: 3015
+        width: 215
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_35
+      rect:
+        serializedVersion: 2
+        x: 2586
+        y: 3015
+        width: 249
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_36
+      rect:
+        serializedVersion: 2
+        x: 3094
+        y: 2929
+        width: 215
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_37
+      rect:
+        serializedVersion: 2
+        x: 3318
+        y: 2929
+        width: 249
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_38
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 2800
+        width: 146
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_39
+      rect:
+        serializedVersion: 2
+        x: 2121
+        y: 2903
+        width: 78
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_40
+      rect:
+        serializedVersion: 2
+        x: 2225
+        y: 2903
+        width: 77
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_41
+      rect:
+        serializedVersion: 2
+        x: 2328
+        y: 2903
+        width: 77
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_42
+      rect:
+        serializedVersion: 2
+        x: 2431
+        y: 2903
+        width: 77
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_43
+      rect:
+        serializedVersion: 2
+        x: 2113
+        y: 2800
+        width: 94
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_44
+      rect:
+        serializedVersion: 2
+        x: 2216
+        y: 2800
+        width: 94
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_45
+      rect:
+        serializedVersion: 2
+        x: 2319
+        y: 2800
+        width: 95
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_46
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 2628
+        width: 662
+        height: 155
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_47
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 2628
+        width: 378
+        height: 155
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_48
+      rect:
+        serializedVersion: 2
+        x: 1347
+        y: 2654
+        width: 249
+        height: 111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_49
+      rect:
+        serializedVersion: 2
+        x: 2780
+        y: 2602
+        width: 159
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_50
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 2465
+        width: 662
+        height: 154
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_51
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 2474
+        width: 396
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_52
+      rect:
+        serializedVersion: 2
+        x: 1364
+        y: 2533
+        width: 155
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_53
+      rect:
+        serializedVersion: 2
+        x: 1571
+        y: 2533
+        width: 154
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_54
+      rect:
+        serializedVersion: 2
+        x: 1786
+        y: 2533
+        width: 158
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_55
+      rect:
+        serializedVersion: 2
+        x: 1984
+        y: 2533
+        width: 154
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_56
+      rect:
+        serializedVersion: 2
+        x: 2207
+        y: 2533
+        width: 155
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_57
+      rect:
+        serializedVersion: 2
+        x: 2405
+        y: 2533
+        width: 155
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_58
+      rect:
+        serializedVersion: 2
+        x: 2758
+        y: 2121
+        width: 1558
+        height: 438
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_59
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 2301
+        width: 645
+        height: 155
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_60
+      rect:
+        serializedVersion: 2
+        x: 755
+        y: 2310
+        width: 385
+        height: 155
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_61
+      rect:
+        serializedVersion: 2
+        x: 1287
+        y: 2275
+        width: 180
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_62
+      rect:
+        serializedVersion: 2
+        x: 1295
+        y: 1854
+        width: 339
+        height: 528
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_63
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 2112
+        width: 645
+        height: 137
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_64
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 2112
+        width: 378
+        height: 137
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_65
+      rect:
+        serializedVersion: 2
+        x: 1639
+        y: 1854
+        width: 334
+        height: 420
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_66
+      rect:
+        serializedVersion: 2
+        x: 1984
+        y: 1854
+        width: 333
+        height: 420
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_67
+      rect:
+        serializedVersion: 2
+        x: 2345
+        y: 1897
+        width: 258
+        height: 275
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_68
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 1949
+        width: 645
+        height: 137
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_69
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 1949
+        width: 378
+        height: 137
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_70
+      rect:
+        serializedVersion: 2
+        x: 2758
+        y: 1753
+        width: 1558
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_71
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 1845
+        width: 499
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_72
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 1794
+        width: 129
+        height: 124
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_73
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 1799
+        width: 129
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_74
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 1751
+        width: 499
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_75
+      rect:
+        serializedVersion: 2
+        x: 1287
+        y: 1484
+        width: 601
+        height: 318
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_76
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 1656
+        width: 499
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_77
+      rect:
+        serializedVersion: 2
+        x: 1923
+        y: 1493
+        width: 594
+        height: 214
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_78
+      rect:
+        serializedVersion: 2
+        x: 2706
+        y: 1303
+        width: 293
+        height: 370
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_79
+      rect:
+        serializedVersion: 2
+        x: 3033
+        y: 1303
+        width: 293
+        height: 370
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_80
+      rect:
+        serializedVersion: 2
+        x: 3361
+        y: 1303
+        width: 300
+        height: 370
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_81
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 1467
+        width: 378
+        height: 137
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_82
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1467
+        width: 387
+        height: 137
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_83
+      rect:
+        serializedVersion: 2
+        x: 1287
+        y: 1260
+        width: 601
+        height: 215
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_84
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 1297
+        width: 378
+        height: 143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_85
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 1297
+        width: 386
+        height: 143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_86
+      rect:
+        serializedVersion: 2
+        x: 1949
+        y: 1286
+        width: 387
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_87
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 1071
+        width: 163
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_88
+      rect:
+        serializedVersion: 2
+        x: 1519
+        y: 994
+        width: 430
+        height: 111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_89
+      rect:
+        serializedVersion: 2
+        x: 2706
+        y: 882
+        width: 293
+        height: 370
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_90
+      rect:
+        serializedVersion: 2
+        x: 3033
+        y: 882
+        width: 293
+        height: 370
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_91
+      rect:
+        serializedVersion: 2
+        x: 3361
+        y: 890
+        width: 300
+        height: 370
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_92
+      rect:
+        serializedVersion: 2
+        x: 3688
+        y: 890
+        width: 300
+        height: 370
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_93
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 822
+        width: 228
+        height: 215
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_94
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 822
+        width: 224
+        height: 215
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_95
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 822
+        width: 224
+        height: 215
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_96
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 692
+        width: 172
+        height: 327
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_97
+      rect:
+        serializedVersion: 2
+        x: 1510
+        y: 856
+        width: 353
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_98
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 572
+        width: 228
+        height: 215
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_99
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 572
+        width: 224
+        height: 215
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_100
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 572
+        width: 224
+        height: 215
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_101
+      rect:
+        serializedVersion: 2
+        x: 2706
+        y: 452
+        width: 293
+        height: 369
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_102
+      rect:
+        serializedVersion: 2
+        x: 3033
+        y: 452
+        width: 293
+        height: 369
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_103
+      rect:
+        serializedVersion: 2
+        x: 3361
+        y: 452
+        width: 300
+        height: 369
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_104
+      rect:
+        serializedVersion: 2
+        x: 3688
+        y: 460
+        width: 300
+        height: 370
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_105
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 314
+        width: 228
+        height: 223
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_106
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 314
+        width: 224
+        height: 223
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_107
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 314
+        width: 224
+        height: 223
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_108
+      rect:
+        serializedVersion: 2
+        x: 3396
+        y: 151
+        width: 231
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_109
+      rect:
+        serializedVersion: 2
+        x: 3722
+        y: 142
+        width: 224
+        height: 301
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_110
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 73
+        width: 228
+        height: 224
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Element_111
+      rect:
+        serializedVersion: 2
+        x: 943
+        y: 3621
+        width: 106
+        height: 151
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
