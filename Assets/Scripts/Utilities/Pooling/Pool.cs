@@ -18,28 +18,18 @@ namespace Logic
         private PoolInfo m_Info = null;
         [SerializeField]
         private int m_CurrentSpawned = 0;
+        [SerializeField]
+        private Transform m_Parent = null;
         /// <summary>
         /// Constructor for this pool 
         /// </summary>
         /// <param name="instanceNumber"></param>
-        public Pool(PoolInfo info)
+        public Pool(PoolInfo info, Transform parent)
         {
             // Initialize list
             m_Instances = new Stack<GameObject>();
             m_Info = info;
-            GameObject instance = null; 
-            for(int currentInstance = 0; currentInstance < m_Info.m_InstanceNumber; currentInstance++)
-            {
-                // create new game object instance
-                instance = GameObject.Instantiate(m_Info.m_ObjectPrefab);
-                instance.SetActive(false);
-                // Add pool object component and set properties
-                PoolObject pObject = instance.AddComponent<PoolObject>();
-                pObject.m_Pool = this;
-                pObject.m_Lifetime = m_Info.m_LifeTime;
-                // add to queue
-                m_Instances.Push(instance);
-            }
+            m_Parent = parent;           
         }
 
         /// <summary>
@@ -48,7 +38,19 @@ namespace Logic
         /// <returns>Next available instance, otherwise it returns null.</returns>
         public GameObject NextInstance()
         {           
-            if(m_Instances.Count > 0)
+            if(m_CurrentSpawned < m_Info.m_InstanceNumber)
+            {
+                GameObject instance = GameObject.Instantiate(m_Info.m_ObjectPrefab);
+                instance.SetActive(false);
+                instance.transform.SetParent(m_Parent);
+                // Add pool object component and set properties
+                PoolObject pObject = instance.AddComponent<PoolObject>();
+                pObject.m_Pool = this;
+                pObject.m_Lifetime = m_Info.m_LifeTime;
+                m_CurrentSpawned++;
+                return instance;
+            }
+            else if(m_Instances.Count > 0)
             {
                 return m_Instances.Pop();
             }       
@@ -62,6 +64,7 @@ namespace Logic
         {           
             instance.transform.rotation = Quaternion.identity;
             instance.SetActive(false);
+            instance.transform.SetParent(m_Parent);
             m_Instances.Push(instance);            
         }
     }

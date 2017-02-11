@@ -1,4 +1,7 @@
-﻿using UnityEngine;
+﻿/// ==============================================================
+/// © Mauricio Galvez ALL RIGHTS RESERVED
+/// ==============================================================
+using UnityEngine;
 using System.Collections;
 namespace Logic
 {
@@ -11,7 +14,7 @@ namespace Logic
         [SerializeField]
         private GameObject m_Object = null;
 
-        public override Status UpdateAction()
+        public override Status UpdateNode()
         {
             PoolObject poolInstance = m_Object.GetComponent<PoolObject>();
             // validate 

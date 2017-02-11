@@ -115,9 +115,10 @@ namespace Logic
             {
                 return Status.Error;
             }
-
+            Vector3 direction = m_Target.position - m_Origin.position;
+            direction.y = 0;
             // check distance between origin and target
-            if (Vector3.Distance(m_Origin.position,m_Target.position) <= m_MinimumDistance)
+            if (direction.magnitude <= m_MinimumDistance)
             {
                 return Status.Success;
             }

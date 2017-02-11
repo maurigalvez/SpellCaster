@@ -15,9 +15,9 @@ namespace Logic
     public class Sequence : BehaviourNode
     {
         [SerializeField]
-        private List<BehaviourNode> m_Actions = new List<BehaviourNode>();
+        protected List<BehaviourNode> m_Actions = new List<BehaviourNode>();
 
-        public override Status UpdateAction()
+        public override Status UpdateNode()
         {
             Status status = Status.Success;
             // Check if there's actions
@@ -31,7 +31,7 @@ namespace Logic
                 // enter action
                 m_Actions[currentAction].Enter();
                 // update action
-                status = m_Actions[currentAction].UpdateAction();
+                status = m_Actions[currentAction].UpdateNode();
                 if (status != Status.Success)
                 {
                     return status;
@@ -40,14 +40,6 @@ namespace Logic
                 m_Actions[currentAction].Exit();
             }           
             return Status.Success;
-        }
-
-        /// <summary>
-        /// Allows this sequence to be executed outside of a behaviour tree
-        /// </summary>
-        public virtual void Execute()
-        {
-            UpdateAction();
-        }
+        }      
     }
 }

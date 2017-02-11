@@ -69,13 +69,14 @@ GameObject:
   - 114: {fileID: 114000013833292784}
   - 114: {fileID: 114000013538937066}
   - 114: {fileID: 114000011827916400}
+  - 195: {fileID: 195000011369846734}
   m_Layer: 0
   m_Name: Spooky
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1000010099288086
 GameObject:
   m_ObjectHideFlags: 1
@@ -766,6 +767,22 @@ GameObject:
   - 4: {fileID: 4000013358755068}
   m_Layer: 0
   m_Name: left_foot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1000012423274834
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 4000012046782974}
+  - 114: {fileID: 114000012155081466}
+  m_Layer: 0
+  m_Name: Wave Entity Destroyed
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1904,6 +1921,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4000014074962302}
   m_RootOrder: 3
+--- !u!4 &4000012046782974
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012423274834}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 4000012463181578}
+  m_RootOrder: 2
 --- !u!4 &4000012143540290
 Transform:
   m_ObjectHideFlags: 1
@@ -2000,6 +2030,7 @@ Transform:
   m_Children:
   - {fileID: 4000012621742064}
   - {fileID: 4000013088233134}
+  - {fileID: 4000012046782974}
   m_Father: {fileID: 4000014074962302}
   m_RootOrder: 4
 --- !u!4 &4000012479801888
@@ -2633,8 +2664,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.39, y: 0.3, z: 0.3}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.39, y: 0.66, z: 0.3}
+  m_Center: {x: 0, y: 0.05, z: 0}
 --- !u!95 &95000012396033482
 Animator:
   serializedVersion: 3
@@ -2671,7 +2702,7 @@ MonoBehaviour:
   m_Target: {fileID: 0}
   m_TargetVar: {fileID: 0}
   m_TargetID: FencePosition
-  m_MinimumDistance: 0.1
+  m_MinimumDistance: 0.55
 --- !u!114 &114000010677149992
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2684,6 +2715,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Actions:
+  - {fileID: 114000012155081466}
   - {fileID: 114000011707551824}
 --- !u!114 &114000011707551824
 MonoBehaviour:
@@ -2727,6 +2759,17 @@ MonoBehaviour:
   m_LayerMask:
     serializedVersion: 2
     m_Bits: 1024
+--- !u!114 &114000012155081466
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012423274834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d10d27d5002dcf74bb2aa03804e1d9e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114000012224760046
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2780,6 +2823,7 @@ MonoBehaviour:
   m_Actions:
   - {fileID: 114000010401694686}
   - {fileID: 114000012135621154}
+  - {fileID: 114000012155081466}
   - {fileID: 114000012289334628}
 --- !u!114 &114000013538937066
 MonoBehaviour:
@@ -2928,3 +2972,23 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.06243354, y: 0.006127376, z: 0.00001399219}
     m_Extent: {x: 0.33599734, y: 0.12062022, z: 0.3536743}
   m_DirtyAABB: 0
+--- !u!195 &195000011369846734
+NavMeshAgent:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010054903466}
+  m_Enabled: 1
+  m_Radius: 0.2
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 0.65
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4

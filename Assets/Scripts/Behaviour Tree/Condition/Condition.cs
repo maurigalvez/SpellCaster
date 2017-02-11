@@ -11,7 +11,7 @@ namespace Logic
     /// </summary>
     public abstract class Condition : BehaviourNode
     {
-        public override Status UpdateAction()
+        public override Status UpdateNode()
         {
             return ValidateCondition();
         }

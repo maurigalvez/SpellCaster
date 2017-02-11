@@ -16,7 +16,7 @@ namespace Logic
         [SerializeField]
         protected string m_PoolID = "";
 
-        public override Status UpdateAction()
+        public override Status UpdateNode()
         {
             // Validate id
             if(m_PoolID.Length == 0 || m_PoolID == "")

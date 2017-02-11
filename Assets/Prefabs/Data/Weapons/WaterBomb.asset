@@ -8,8 +8,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bc47e721726078d44a8b5a2679e3a32b, type: 3}
-  m_Name: Explosion
+  m_Script: {fileID: 11500000, guid: c76dad44197ca5340abd2ee56e30f874, type: 3}
+  m_Name: WaterBomb
   m_EditorClassIdentifier: 
+  Name: Magic Ball
+  Speed: 25
   Damage: 100
-  EffectPoolID: SmallExplosion
+  ModelPoolID: WaterBomb
+  EffectPoolID: WaterBombImpact

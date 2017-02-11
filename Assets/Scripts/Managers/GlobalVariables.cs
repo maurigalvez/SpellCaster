@@ -1,4 +1,7 @@
-﻿using UnityEngine;
+﻿/// ==============================================================
+/// © Mauricio Galvez ALL RIGHTS RESERVED
+/// ==============================================================
+using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 namespace Logic
@@ -28,24 +31,7 @@ namespace Logic
             m_VariableMap.TryGetValue(variableID, out value);
             return value;
         }
-
-        /// <summary>
-        /// Add variables to use in map.
-        /// </summary>
-        /*private IEnumerator Initialize()
-        {
-            // check if any variables were assinged
-            if (m_Variables.Length > 0)
-            {
-                m_VariableMap = new Dictionary<string, object>();
-                for(int variableIndex = 0; variableIndex < m_Variables.Length; variableIndex++)
-                {
-                    m_VariableMap.Add(m_Variables[variableIndex].VariableID, m_Variables[variableIndex].Value);
-                }
-            }
-            yield return null;
-        }*/
-
+    
         /// <summary>
         /// Register global variable into map
         /// </summary>
@@ -58,6 +44,17 @@ namespace Logic
             }
             // add new global variable
             m_VariableMap.Add(variable.VariableID, variable.Value);
+        }
+        /// <summary>
+        /// Unregister global variable from map
+        /// </summary>
+        /// <param name="variable">Global variable to unregister</param>
+        public void UnregisterVariable(GlobalVariable variable)
+        {
+            if(m_VariableMap.Count != 0)
+            {
+                m_VariableMap.Remove(variable.VariableID);
+            }
         }
 
     }

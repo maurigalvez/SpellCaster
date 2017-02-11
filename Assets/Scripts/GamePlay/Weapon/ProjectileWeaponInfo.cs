@@ -22,7 +22,7 @@ namespace Logic
         /// Projectile to use for this weapon
         /// </summary>
         [SerializeField]
-        public ProjectileInfo m_Projectile = null;
+        public ProjectileInfo Projectile = null;
        
     }
 }

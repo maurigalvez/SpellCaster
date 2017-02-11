@@ -22,7 +22,7 @@ namespace Logic
         [SerializeField]
         private Vector3Var m_WorldPosition = null;
 
-        public override Status UpdateAction()
+        public override Status UpdateNode()
         {
             Debug.Log("Updating position");
             // validate

@@ -14,4 +14,4 @@ MonoBehaviour:
   Name: Wand
   FireRate: 2
   Ammo: 20
-  m_Projectile: {fileID: 11400000, guid: eca8b0b67cbe819489de3ef83785fe2f, type: 2}
+  Projectile: {fileID: 11400000, guid: 89c89fdbf8146f547bcb39b1c31f8cc5, type: 2}

@@ -67,7 +67,7 @@ namespace Logic
             StartCoroutine("UpdateTimer");
         }
 
-        public override Status UpdateAction()
+        public override Status UpdateNode()
         {
             return m_CurrentStatus;
         }

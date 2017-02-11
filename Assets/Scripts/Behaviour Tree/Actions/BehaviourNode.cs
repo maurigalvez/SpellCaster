@@ -31,7 +31,14 @@ public abstract class BehaviourNode : MonoBehaviour
     /// Function that will be fired when updating/executing action
     /// </summary>
     /// <returns>Status of update.</returns>
-    public abstract Status UpdateAction();
+    public abstract Status UpdateNode();
+
+    public virtual void Execute()
+    {
+        Enter();
+        UpdateNode();
+        Exit();
+    }
 
     /// <summary>
     /// Function that will be fired when exiting action

@@ -1,4 +1,7 @@
-﻿using UnityEngine;
+﻿/// ==============================================================
+/// © Mauricio Galvez ALL RIGHTS RESERVED
+/// ==============================================================
+using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
 namespace Logic
@@ -17,7 +20,7 @@ namespace Logic
     /// <summary>
     /// Manager in charge of executing spawn of enemies actions and updating timers.
     /// </summary>
-    public class WaveManager : MonoBehaviour
+    public class WaveManager : Singleton<WaveManager>
     {
         /// <summary>
         /// Total number of waves
@@ -80,10 +83,17 @@ namespace Logic
 
         [SerializeField]
         private Sequence m_EndSequence = null;
+
         /// <summary>
         /// Time in seconds until next spawn action execution
         /// </summary>
         private float m_TimeUntilNextSpawn = 0;
+
+        /// <summary>
+        /// Number of entities spawned that were destroyed
+        /// </summary>
+        private int m_WaveEntitiesDestroyed = 0;
+
         private Image m_TimerBar = null;
         //private Text m_TimeDisplay = null;
         /// <summary>
@@ -91,6 +101,11 @@ namespace Logic
         /// </summary>
         private Text m_NumberDisplay = null;
 
+        public delegate void WaveBeginEvent();
+
+        /// <summary>
+        /// Initialize Wave Manager
+        /// </summary>
         private void Start()
         {
             // validate spawn action
@@ -131,7 +146,9 @@ namespace Logic
                     m_Timer.OnValueChanged += UpdateTimeDisplay;
                 }
             }*/
-            StartCoroutine("WaitForNextWave");
+            // hook stop wave when game is over
+            GameManager.Instance.OnGameOver += StopWaves;
+            StartCoroutine("WaitForNextWave");      
         }
 
         /// <summary>
@@ -156,7 +173,9 @@ namespace Logic
         /// </summary>
         private IEnumerator UpdateWave()
         {
-            m_CurrentWaveNumber.Value = (int)m_CurrentWaveNumber.Value + 1;
+            int currentWave = (int)m_CurrentWaveNumber.Value + 1;
+            int spawnedEnemies = 0;
+            m_CurrentWaveNumber.Value = currentWave;
             // Reset timer
             float timer = m_TimePerWaveInSeconds;
             // reset spawn rate
@@ -172,18 +191,40 @@ namespace Logic
                 m_Timer.Value = timer;
                 m_TimerBar.fillAmount = timer / m_TimePerWaveInSeconds;
                 // update spawn time
-                nextSpawnTime -= 1 * (1 + m_SpawnDecrementPerWave * 0.01f);
+                nextSpawnTime -= (1 + m_SpawnDecrementPerWave * currentWave);
+                Debug.Log(nextSpawnTime);
                 // Update wave stage
                 UpdateWaveStage(timer);
                 // check if spawn time has run out
                 if(nextSpawnTime <= 0)
                 {
-                    m_SpawnAction.UpdateAction();
+                    // add to entity spawned counter
+                    spawnedEnemies++;
+                    // fire spawn action 
+                    m_SpawnAction.Enter();
+                    m_SpawnAction.UpdateNode();
+                    m_SpawnAction.Exit();
+                    // calculate next spawn time
                     nextSpawnTime = Random.Range(m_SpawnStages[m_CurrentSpawnStage].SpawnRate.x, m_SpawnStages[m_CurrentSpawnStage].SpawnRate.y);
                 }
             }
+            // wait until all enemies have been destroyed
+            while(spawnedEnemies > m_WaveEntitiesDestroyed)
+            {
+                yield return new WaitForFixedUpdate();
+            }
+            // reset wave entities destroyed
+            m_WaveEntitiesDestroyed = 0;
             // Fire delay for next waave
             StartCoroutine("WaitForNextWave");
+        }
+
+        /// <summary>
+        /// Fired when entity spawned by wave is destroyed
+        /// </summary>
+        public void WaveEntityDestroyed()
+        {
+            m_WaveEntitiesDestroyed++;
         }
 
         /// <summary>
@@ -214,7 +255,7 @@ namespace Logic
             {
                 if (m_EndSequence != null)
                 {
-                    m_EndSequence.UpdateAction();
+                    m_EndSequence.UpdateNode();
                 }
             }
             else
@@ -222,16 +263,24 @@ namespace Logic
                 // Launch waitfor wave sequence
                 if (m_OnWaitForWave != null)
                 {
-                    m_OnWaitForWave.UpdateAction();
+                    m_OnWaitForWave.UpdateNode();
                 }
-                yield return new WaitForSeconds(3);
+                yield return new WaitForSeconds(m_DelayBeforeWave);
                 // Launch on wave begins sequence
                 if(m_OnWaveBegins != null)
                 {
-                    m_OnWaveBegins.UpdateAction();
+                    m_OnWaveBegins.UpdateNode();
                 }
                 StartCoroutine("UpdateWave");
             }
+        }
+
+        /// <summary>
+        /// Stop all functions
+        /// </summary>
+        private void StopWaves()
+        {
+            StopAllCoroutines();
         }
     }
 }

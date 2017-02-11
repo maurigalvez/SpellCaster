@@ -31,7 +31,7 @@ namespace Logic
         [SerializeField]
         private bool m_ApplyTransformRotation = false;
 
-        public override Status UpdateAction()
+        public override Status UpdateNode()
         {
             // validate pools and targets
             if(m_PoolID.Length ==0 || m_SpawnTargets.Length == 0)
@@ -48,7 +48,7 @@ namespace Logic
 
         public override void Spawn(GameObject instance)
         {
-            Debug.Log("Spawn " + Time.time);
+            //Debug.Log("Spawn " + Time.time);
             // get position
             Transform targetTransform = m_SpawnTargets[Random.Range(0, m_SpawnTargets.Length)];
             Vector3 targetPosition = targetTransform.position;

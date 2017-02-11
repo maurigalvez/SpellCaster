@@ -29,14 +29,22 @@ namespace Logic
         private RaycastHit m_Hit = new RaycastHit();
         private Ray m_Ray = new Ray();
 
-
+        public override void Enter()
+        {
+            base.Enter();
+            if(m_Camera == null)
+            {
+                m_Camera = Camera.main;
+            }
+        }
         public override Status ValidateCondition()
         {
             if (m_Camera == null || m_ScreenPoint == null)
             {
                 return Status.Error;
             }
-            m_Ray = m_Camera.ScreenPointToRay((Vector3)m_ScreenPoint.Value);
+            m_Ray = /*m_Camera.ViewportPointToRay((Vector3)m_ScreenPoint.Value);*/m_Camera.ScreenPointToRay((Vector3)m_ScreenPoint.Value);
+
             // check if there's a raycast 
             if (Physics.Raycast(m_Ray, out m_Hit, m_Distance, m_LayerMask))
             {

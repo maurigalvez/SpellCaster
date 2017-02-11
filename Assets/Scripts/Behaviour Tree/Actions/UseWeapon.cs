@@ -15,7 +15,7 @@ namespace Logic
         [SerializeField]
         private Weapon m_Weapon = null;
 
-        public override Status UpdateAction()
+        public override Status UpdateNode()
         {
             // validate
             if (!m_Weapon)

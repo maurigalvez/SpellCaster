@@ -31,7 +31,7 @@ namespace Logic
             Debug.Log("Firing");
             if(m_Events != null)
             {
-                m_Events.UpdateAction();
+                m_Events.UpdateNode();
             }
         }
     }

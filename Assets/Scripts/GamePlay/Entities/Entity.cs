@@ -84,7 +84,7 @@ namespace Logic
             m_Health.Value = (float)m_Health.Value - damage;
             if (m_OnHitSequence)
             {
-                m_OnHitSequence.UpdateAction();
+                m_OnHitSequence.UpdateNode();
             }
             if ((float)m_Health.Value <= 0)
             {

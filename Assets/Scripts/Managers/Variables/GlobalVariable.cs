@@ -46,5 +46,13 @@ namespace Logic
                 GlobalVariables.Instance.RegisterVariable(this);
             }
         }
+
+        private void OnDestroy()
+        {
+            if (m_Local == false && GlobalVariables.Instance != null)
+            {
+                GlobalVariables.Instance.UnregisterVariable(this);
+            }
+        }
     }
 }

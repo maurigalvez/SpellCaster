@@ -38,7 +38,7 @@ namespace Logic
             // Iterate through list and add to map
             for (int pool = 0; pool < m_Pools.Count; pool++)
             {
-                m_PoolMap.Add(m_Pools[pool].m_PoolID, new Pool(m_Pools[pool]));
+                m_PoolMap.Add(m_Pools[pool].m_PoolID, new Pool(m_Pools[pool],this.transform));
             }
             // check if pools if empty
             if(m_PoolMap.Count ==0)

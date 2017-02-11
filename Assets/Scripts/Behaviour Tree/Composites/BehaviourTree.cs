@@ -30,10 +30,9 @@ namespace Logic
             // enter first child
             m_Children[currentChild].Enter();
             while (status != BehaviourNode.Status.Error)
-            {
-                yield return new WaitForFixedUpdate();                
+            {                            
                 // obtain status of current child
-                status = m_Children[currentChild].UpdateAction();
+                status = m_Children[currentChild].UpdateNode();
                 // parse status
                 switch(status)
                 {
@@ -57,7 +56,8 @@ namespace Logic
                         // enter current child
                         m_Children[currentChild].Enter();
                         break;
-                }                
+                }
+                yield return new WaitForFixedUpdate();
             }
             // Deactivate this game object
             this.gameObject.SetActive(false);
