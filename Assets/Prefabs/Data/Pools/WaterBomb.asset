@@ -15,3 +15,4 @@ MonoBehaviour:
   m_ObjectPrefab: {fileID: 157264, guid: 7252d67658066af47bec6ca53e149df0, type: 2}
   m_InstanceNumber: 10
   m_LifeTime: -1
+  m_ParentToManager: 1

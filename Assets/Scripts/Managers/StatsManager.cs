@@ -8,6 +8,9 @@ namespace Logic
     public class StatsManager : Singleton<StatsManager>
     {
         [SerializeField]
+        private IntVar m_HighestScore = null;
+
+        [SerializeField]
         private IntVar m_TotalCoins = null;
 
         public void AddPoints(int points)

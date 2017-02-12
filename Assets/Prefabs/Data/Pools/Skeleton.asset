@@ -16,3 +16,4 @@ MonoBehaviour:
     type: 2}
   m_InstanceNumber: 10
   m_LifeTime: -1
+  m_ParentToManager: 0

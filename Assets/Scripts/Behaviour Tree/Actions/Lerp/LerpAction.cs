@@ -1,7 +1,13 @@
-﻿using UnityEngine;
+﻿/// ==============================================================
+/// © Mauricio Galvez ALL RIGHTS RESERVED
+/// ==============================================================
+using UnityEngine;
 using System.Collections;
 namespace Logic
 {
+    /// <summary>
+    /// Abstract used to define lerp actions
+    /// </summary>
     public abstract class LerpAction : Action
     {
         [SerializeField]

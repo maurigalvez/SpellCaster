@@ -18,8 +18,6 @@ namespace Logic
         private PoolInfo m_Info = null;
         [SerializeField]
         private int m_CurrentSpawned = 0;
-        [SerializeField]
-        private Transform m_Parent = null;
         /// <summary>
         /// Constructor for this pool 
         /// </summary>
@@ -28,8 +26,7 @@ namespace Logic
         {
             // Initialize list
             m_Instances = new Stack<GameObject>();
-            m_Info = info;
-            m_Parent = parent;           
+            m_Info = info;              
         }
 
         /// <summary>
@@ -42,7 +39,10 @@ namespace Logic
             {
                 GameObject instance = GameObject.Instantiate(m_Info.m_ObjectPrefab);
                 instance.SetActive(false);
-                instance.transform.SetParent(m_Parent);
+                if (m_Info.m_ParentToManager)
+                {
+                    instance.transform.SetParent(PoolManager.Instance.transform);
+                }
                 // Add pool object component and set properties
                 PoolObject pObject = instance.AddComponent<PoolObject>();
                 pObject.m_Pool = this;
@@ -64,7 +64,10 @@ namespace Logic
         {           
             instance.transform.rotation = Quaternion.identity;
             instance.SetActive(false);
-            instance.transform.SetParent(m_Parent);
+            if (m_Info.m_ParentToManager)
+            {
+                instance.transform.SetParent(PoolManager.Instance.transform);
+            }
             m_Instances.Push(instance);            
         }
     }

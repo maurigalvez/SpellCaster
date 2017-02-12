@@ -135,19 +135,9 @@ namespace Logic
                     m_CurrentWaveNumber.OnValueChanged += UpdateWaveNumberDisplay;
                 }
             }
-            // obtain time display
-            /*object display = GlobalVariables.Instance.GetValue(m_TimerDisplayID);
-            if(display != null)
-            {
-                m_TimeDisplay = (Text)display;
-                if(m_Timer != null)
-                {
-                    m_Timer.Value = m_TimePerWaveInSeconds;
-                    m_Timer.OnValueChanged += UpdateTimeDisplay;
-                }
-            }*/
             // hook stop wave when game is over
             GameManager.Instance.OnGameOver += StopWaves;
+            GameManager.Instance.State = GameManager.GameState.InGame;
             StartCoroutine("WaitForNextWave");      
         }
 
@@ -158,15 +148,6 @@ namespace Logic
         {
             m_NumberDisplay.text = m_CurrentWaveNumber.Value.ToString() + " / " + m_NumberOfWaves;
         }
-
-        /// <summary>
-        /// Updates time display with current timer value
-        /// </summary>
-        /*private void UpdateTimeDisplay()
-        {
-            float timer = (float)m_Timer.Value;
-            m_TimeDisplay.text = timer.ToString("00");
-        }*/
 
         /// <summary>
         /// Updates timer and time for next spawn. Passes to next event once timer runs out
@@ -183,7 +164,7 @@ namespace Logic
             // obtain spawn time from current index
             float nextSpawnTime = Random.Range(m_SpawnStages[m_CurrentSpawnStage].SpawnRate.x, m_SpawnStages[m_CurrentSpawnStage].SpawnRate.y);
             // check if timer hasn't run out
-            while (timer > 0)
+            while (GameManager.Instance.State == GameManager.GameState.InGame && timer > 0)
             {
                 yield return new WaitForSeconds(1);
                 // update timer
@@ -209,7 +190,7 @@ namespace Logic
                 }
             }
             // wait until all enemies have been destroyed
-            while(spawnedEnemies > m_WaveEntitiesDestroyed)
+            while(GameManager.Instance.State == GameManager.GameState.InGame && spawnedEnemies > m_WaveEntitiesDestroyed)
             {
                 yield return new WaitForFixedUpdate();
             }

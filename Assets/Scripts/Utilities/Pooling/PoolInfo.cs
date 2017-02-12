@@ -29,8 +29,11 @@ namespace Logic
         /// <summary>
         /// Life time of this particle. If -1 then lifetime will depend on other factors (e.g. collision).
         /// </summary>
+        [SerializeField]
         public float m_LifeTime = -1;
 
+        [SerializeField]
+        public bool m_ParentToManager = false;
     }
 }
 
