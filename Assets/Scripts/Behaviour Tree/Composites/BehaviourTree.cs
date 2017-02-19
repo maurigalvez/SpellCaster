@@ -24,13 +24,13 @@ namespace Logic
         }
 
         private IEnumerator UpdateTree()
-        {
+        {            
             BehaviourNode.Status status = BehaviourNode.Status.Success;
             int currentChild = 0;
             // enter first child
             m_Children[currentChild].Enter();
             while (status != BehaviourNode.Status.Error)
-            {                            
+            {               
                 // obtain status of current child
                 status = m_Children[currentChild].UpdateNode();
                 // parse status

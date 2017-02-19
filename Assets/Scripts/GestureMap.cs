@@ -16,7 +16,7 @@ namespace Logic
         [SerializeField]
         public string GestureName = null;
         [SerializeField]
-        public Sequence OnRecognize = null;
+        public BehaviourNode OnRecognize = null;
     }
 
     public class GestureMap : MonoBehaviour
@@ -25,7 +25,7 @@ namespace Logic
         public List<GestureEvent> GestureEvents = new List<GestureEvent>();
 
         [SerializeField]
-        private Dictionary<string, Sequence> m_GestureEventMap;
+        private Dictionary<string, BehaviourNode> m_GestureEventMap;
 
         [SerializeField]
         public Vector3Var m_GestureCenter = null;
@@ -48,12 +48,12 @@ namespace Logic
         private void OnGestureRecognition(Gesture gesture, Result result)
         {
             // obtain node to run
-            Sequence gestureEvent = null;
+            BehaviourNode gestureEvent = null;
             if(m_GestureEventMap.TryGetValue(result.Name,out gestureEvent))
             {
                 if(m_GestureCenter)
                 {
-                    Vector3 center = gesture.GetCenter();
+                    Vector3 center = gesture.GetScreenCenterPosition();
                     m_GestureCenter.Value = center;
                 }
                 gestureEvent.Execute();
@@ -65,7 +65,7 @@ namespace Logic
         /// </summary>
         private IEnumerator InitializeMap()
         {
-            m_GestureEventMap = new Dictionary<string, Sequence>();           
+            m_GestureEventMap = new Dictionary<string, BehaviourNode>();           
             for (int gestureIndex = 0; gestureIndex < GestureEvents.Count; gestureIndex++)
             {               
                 m_GestureEventMap.Add(GestureEvents[gestureIndex].GestureName, GestureEvents[gestureIndex].OnRecognize);
@@ -88,11 +88,11 @@ namespace Logic
             self.m_GestureCenter = EditorGUILayout.ObjectField("Gesture Center Screen Point: ", self.m_GestureCenter, typeof(Vector3Var), true) as Vector3Var;
             // add a new gesture event
             EditorGUILayout.BeginHorizontal();
-            EditorGUILayout.LabelField("Gesture Events");
-            if (GUILayout.Button("Add new gesture event"))
-            {
-                self.GestureEvents.Add(null);
-            }
+                EditorGUILayout.LabelField("Gesture Events");
+                if (GUILayout.Button("Add new gesture event"))
+                {
+                    self.GestureEvents.Add(new GestureEvent());
+                }
             EditorGUILayout.EndHorizontal();
             // Edit list of gesture events
             for(int eventIndex = 0; eventIndex < self.GestureEvents.Count; eventIndex++)
@@ -104,13 +104,13 @@ namespace Logic
                 // -----
                 // NAME
                 // ----
-                    if(m_GestureEvent.GestureName.Length == 0)
+                    if(m_GestureEvent== null && m_GestureEvent.GestureName.Length == 0)
                     {
                         EditorGUILayout.LabelField(eventIndex.ToString(),EditorStyles.boldLabel);
                     }
                     else
                     {
-                    EditorGUILayout.LabelField(m_GestureEvent.GestureName, EditorStyles.boldLabel);
+                        EditorGUILayout.LabelField(m_GestureEvent.GestureName, EditorStyles.boldLabel);
                     }
                     if (GUILayout.Button("-"))
                     {
@@ -120,14 +120,9 @@ namespace Logic
                 EditorGUILayout.EndHorizontal();
                 // -----
                 // PARAMETERS
-                // ------
-             
+                // ------             
                 m_GestureEvent.GestureName = EditorGUILayout.TextField("Gesture ID:", m_GestureEvent.GestureName);
-                m_GestureEvent.OnRecognize = EditorGUILayout.ObjectField("Event: ", m_GestureEvent.OnRecognize, typeof(Sequence), true) as Sequence;
-                    
-             
-                   
-              
+                m_GestureEvent.OnRecognize = EditorGUILayout.ObjectField("Event: ", m_GestureEvent.OnRecognize, typeof(Sequence), true) as Sequence;                         
             }
         }
     }

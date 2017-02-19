@@ -1187,7 +1187,7 @@ MonoBehaviour:
       Position: {x: 181, y: 43}
     numberOfPoints: 64
   - Name: line
-    IsShown: 0
+    IsShown: 1
     NormalizedPoints:
     - StrokeID: 0
       Position: {x: -0.460849, y: 0.0001691198}
@@ -1710,4 +1710,636 @@ MonoBehaviour:
       Position: {x: 205, y: 146}
     - StrokeID: 0
       Position: {x: 214, y: 146}
+    numberOfPoints: 64
+  - Name: line
+    IsShown: 0
+    NormalizedPoints:
+    - StrokeID: 0
+      Position: {x: -106.333336, y: -412}
+    - StrokeID: 0
+      Position: {x: -106.31746, y: -412}
+    - StrokeID: 0
+      Position: {x: -106.30159, y: -412}
+    - StrokeID: 0
+      Position: {x: -106.28571, y: -412}
+    - StrokeID: 0
+      Position: {x: -106.269844, y: -412}
+    - StrokeID: 0
+      Position: {x: -106.25397, y: -412}
+    - StrokeID: 0
+      Position: {x: -106.2381, y: -412}
+    - StrokeID: 0
+      Position: {x: -106.22222, y: -412}
+    - StrokeID: 0
+      Position: {x: -106.20635, y: -412}
+    - StrokeID: 0
+      Position: {x: -106.190475, y: -412}
+    - StrokeID: 0
+      Position: {x: -106.17461, y: -412}
+    - StrokeID: 0
+      Position: {x: -106.15873, y: -412}
+    - StrokeID: 0
+      Position: {x: -106.14286, y: -412}
+    - StrokeID: 0
+      Position: {x: -106.12698, y: -412}
+    - StrokeID: 0
+      Position: {x: -106.111115, y: -412}
+    - StrokeID: 0
+      Position: {x: -106.09524, y: -412}
+    - StrokeID: 0
+      Position: {x: -106.07937, y: -412}
+    - StrokeID: 0
+      Position: {x: -106.06349, y: -412}
+    - StrokeID: 0
+      Position: {x: -106.04762, y: -412}
+    - StrokeID: 0
+      Position: {x: -106.031746, y: -412}
+    - StrokeID: 0
+      Position: {x: -106.01588, y: -412}
+    - StrokeID: 0
+      Position: {x: -106, y: -412}
+    - StrokeID: 0
+      Position: {x: -105.98413, y: -412}
+    - StrokeID: 0
+      Position: {x: -105.968254, y: -412}
+    - StrokeID: 0
+      Position: {x: -105.952385, y: -412}
+    - StrokeID: 0
+      Position: {x: -105.93651, y: -412}
+    - StrokeID: 0
+      Position: {x: -105.92064, y: -412}
+    - StrokeID: 0
+      Position: {x: -105.90476, y: -412}
+    - StrokeID: 0
+      Position: {x: -105.88889, y: -412}
+    - StrokeID: 0
+      Position: {x: -105.87302, y: -412}
+    - StrokeID: 0
+      Position: {x: -105.85715, y: -412}
+    - StrokeID: 0
+      Position: {x: -105.84127, y: -412}
+    - StrokeID: 0
+      Position: {x: -105.82539, y: -412}
+    - StrokeID: 0
+      Position: {x: -105.809525, y: -412}
+    - StrokeID: 0
+      Position: {x: -105.793655, y: -412}
+    - StrokeID: 0
+      Position: {x: -105.77778, y: -412}
+    - StrokeID: 0
+      Position: {x: -105.76191, y: -412}
+    - StrokeID: 0
+      Position: {x: -105.74603, y: -412}
+    - StrokeID: 0
+      Position: {x: -105.73016, y: -412}
+    - StrokeID: 0
+      Position: {x: -105.71429, y: -412}
+    - StrokeID: 0
+      Position: {x: -105.69842, y: -412}
+    - StrokeID: 0
+      Position: {x: -105.68254, y: -412}
+    - StrokeID: 0
+      Position: {x: -105.66667, y: -412}
+    - StrokeID: 0
+      Position: {x: -105.650795, y: -412}
+    - StrokeID: 0
+      Position: {x: -105.634926, y: -412}
+    - StrokeID: 0
+      Position: {x: -105.61905, y: -412}
+    - StrokeID: 0
+      Position: {x: -105.60318, y: -412}
+    - StrokeID: 0
+      Position: {x: -105.5873, y: -412}
+    - StrokeID: 0
+      Position: {x: -105.571434, y: -412}
+    - StrokeID: 0
+      Position: {x: -105.55556, y: -412}
+    - StrokeID: 0
+      Position: {x: -105.53969, y: -412}
+    - StrokeID: 0
+      Position: {x: -105.52381, y: -412}
+    - StrokeID: 0
+      Position: {x: -105.50794, y: -412}
+    - StrokeID: 0
+      Position: {x: -105.492065, y: -412}
+    - StrokeID: 0
+      Position: {x: -105.4762, y: -412}
+    - StrokeID: 0
+      Position: {x: -105.46032, y: -412}
+    - StrokeID: 0
+      Position: {x: -105.44445, y: -412}
+    - StrokeID: 0
+      Position: {x: -105.42857, y: -412}
+    - StrokeID: 0
+      Position: {x: -105.412704, y: -412}
+    - StrokeID: 0
+      Position: {x: -105.39683, y: -412}
+    - StrokeID: 0
+      Position: {x: -105.38096, y: -412}
+    - StrokeID: 0
+      Position: {x: -105.36508, y: -412}
+    - StrokeID: 0
+      Position: {x: -105.34921, y: -412}
+    - StrokeID: 0
+      Position: {x: -105.333336, y: -412}
+    OriginalPoints:
+    - StrokeID: 0
+      Position: {x: 100, y: 132}
+    - StrokeID: 0
+      Position: {x: 106, y: 132}
+    - StrokeID: 0
+      Position: {x: 113, y: 132}
+    numberOfPoints: 64
+  - Name: line
+    IsShown: 0
+    NormalizedPoints:
+    - StrokeID: 0
+      Position: {x: -110.94118, y: -436.88235}
+    - StrokeID: 0
+      Position: {x: -110.93521, y: -436.86743}
+    - StrokeID: 0
+      Position: {x: -110.92924, y: -436.8525}
+    - StrokeID: 0
+      Position: {x: -110.92327, y: -436.8376}
+    - StrokeID: 0
+      Position: {x: -110.91932, y: -436.82208}
+    - StrokeID: 0
+      Position: {x: -110.91617, y: -436.8063}
+    - StrokeID: 0
+      Position: {x: -110.91302, y: -436.79056}
+    - StrokeID: 0
+      Position: {x: -110.908165, y: -436.7753}
+    - StrokeID: 0
+      Position: {x: -110.9022, y: -436.76038}
+    - StrokeID: 0
+      Position: {x: -110.896225, y: -436.74545}
+    - StrokeID: 0
+      Position: {x: -110.89132, y: -436.73026}
+    - StrokeID: 0
+      Position: {x: -110.88868, y: -436.7144}
+    - StrokeID: 0
+      Position: {x: -110.88603, y: -436.69855}
+    - StrokeID: 0
+      Position: {x: -110.88339, y: -436.68268}
+    - StrokeID: 0
+      Position: {x: -110.88128, y: -436.66678}
+    - StrokeID: 0
+      Position: {x: -110.8795, y: -436.65082}
+    - StrokeID: 0
+      Position: {x: -110.87772, y: -436.63483}
+    - StrokeID: 0
+      Position: {x: -110.87595, y: -436.61887}
+    - StrokeID: 0
+      Position: {x: -110.874176, y: -436.60287}
+    - StrokeID: 0
+      Position: {x: -110.87229, y: -436.5869}
+    - StrokeID: 0
+      Position: {x: -110.86914, y: -436.57117}
+    - StrokeID: 0
+      Position: {x: -110.86599, y: -436.55542}
+    - StrokeID: 0
+      Position: {x: -110.86283, y: -436.53964}
+    - StrokeID: 0
+      Position: {x: -110.86275, y: -436.5236}
+    - StrokeID: 0
+      Position: {x: -110.86275, y: -436.5075}
+    - StrokeID: 0
+      Position: {x: -110.86275, y: -436.49146}
+    - StrokeID: 0
+      Position: {x: -110.86275, y: -436.47537}
+    - StrokeID: 0
+      Position: {x: -110.86275, y: -436.4593}
+    - StrokeID: 0
+      Position: {x: -110.86275, y: -436.44324}
+    - StrokeID: 0
+      Position: {x: -110.86275, y: -436.42715}
+    - StrokeID: 0
+      Position: {x: -110.860695, y: -436.4113}
+    - StrokeID: 0
+      Position: {x: -110.857544, y: -436.39554}
+    - StrokeID: 0
+      Position: {x: -110.85439, y: -436.3798}
+    - StrokeID: 0
+      Position: {x: -110.85294, y: -436.36386}
+    - StrokeID: 0
+      Position: {x: -110.85294, y: -436.34778}
+    - StrokeID: 0
+      Position: {x: -110.85294, y: -436.3317}
+    - StrokeID: 0
+      Position: {x: -110.85294, y: -436.31564}
+    - StrokeID: 0
+      Position: {x: -110.85294, y: -436.29956}
+    - StrokeID: 0
+      Position: {x: -110.85294, y: -436.2835}
+    - StrokeID: 0
+      Position: {x: -110.85294, y: -436.26743}
+    - StrokeID: 0
+      Position: {x: -110.85294, y: -436.25137}
+    - StrokeID: 0
+      Position: {x: -110.85294, y: -436.2353}
+    - StrokeID: 0
+      Position: {x: -110.85294, y: -436.2192}
+    - StrokeID: 0
+      Position: {x: -110.85294, y: -436.20316}
+    - StrokeID: 0
+      Position: {x: -110.85294, y: -436.18707}
+    - StrokeID: 0
+      Position: {x: -110.85294, y: -436.17102}
+    - StrokeID: 0
+      Position: {x: -110.85294, y: -436.15494}
+    - StrokeID: 0
+      Position: {x: -110.85294, y: -436.13885}
+    - StrokeID: 0
+      Position: {x: -110.85294, y: -436.1228}
+    - StrokeID: 0
+      Position: {x: -110.85294, y: -436.10672}
+    - StrokeID: 0
+      Position: {x: -110.85294, y: -436.09067}
+    - StrokeID: 0
+      Position: {x: -110.85294, y: -436.0746}
+    - StrokeID: 0
+      Position: {x: -110.85294, y: -436.0585}
+    - StrokeID: 0
+      Position: {x: -110.85294, y: -436.04245}
+    - StrokeID: 0
+      Position: {x: -110.85294, y: -436.02637}
+    - StrokeID: 0
+      Position: {x: -110.85294, y: -436.0103}
+    - StrokeID: 0
+      Position: {x: -110.85294, y: -435.99423}
+    - StrokeID: 0
+      Position: {x: -110.85294, y: -435.97815}
+    - StrokeID: 0
+      Position: {x: -110.85294, y: -435.9621}
+    - StrokeID: 0
+      Position: {x: -110.854774, y: -435.94614}
+    - StrokeID: 0
+      Position: {x: -110.856766, y: -435.93018}
+    - StrokeID: 0
+      Position: {x: -110.85876, y: -435.91425}
+    - StrokeID: 0
+      Position: {x: -110.860756, y: -435.8983}
+    - StrokeID: 0
+      Position: {x: -110.86275, y: -435.88235}
+    OriginalPoints:
+    - StrokeID: 0
+      Position: {x: 104, y: 59}
+    - StrokeID: 0
+      Position: {x: 106, y: 64}
+    - StrokeID: 0
+      Position: {x: 107, y: 69}
+    - StrokeID: 0
+      Position: {x: 109, y: 74}
+    - StrokeID: 0
+      Position: {x: 110, y: 80}
+    - StrokeID: 0
+      Position: {x: 111, y: 89}
+    - StrokeID: 0
+      Position: {x: 112, y: 94}
+    - StrokeID: 0
+      Position: {x: 112, y: 100}
+    - StrokeID: 0
+      Position: {x: 112, y: 106}
+    - StrokeID: 0
+      Position: {x: 113, y: 111}
+    - StrokeID: 0
+      Position: {x: 113, y: 117}
+    - StrokeID: 0
+      Position: {x: 113, y: 124}
+    - StrokeID: 0
+      Position: {x: 113, y: 133}
+    - StrokeID: 0
+      Position: {x: 113, y: 140}
+    - StrokeID: 0
+      Position: {x: 113, y: 147}
+    - StrokeID: 0
+      Position: {x: 113, y: 153}
+    - StrokeID: 0
+      Position: {x: 112, y: 161}
+    numberOfPoints: 64
+  - Name: line
+    IsShown: 0
+    NormalizedPoints:
+    - StrokeID: 0
+      Position: {x: -120.5, y: -443.5}
+    - StrokeID: 0
+      Position: {x: -120.496826, y: -443.48413}
+    - StrokeID: 0
+      Position: {x: -120.49365, y: -443.46826}
+    - StrokeID: 0
+      Position: {x: -120.49048, y: -443.4524}
+    - StrokeID: 0
+      Position: {x: -120.487305, y: -443.43652}
+    - StrokeID: 0
+      Position: {x: -120.48413, y: -443.42065}
+    - StrokeID: 0
+      Position: {x: -120.48096, y: -443.4048}
+    - StrokeID: 0
+      Position: {x: -120.47778, y: -443.38892}
+    - StrokeID: 0
+      Position: {x: -120.47461, y: -443.37305}
+    - StrokeID: 0
+      Position: {x: -120.471436, y: -443.35718}
+    - StrokeID: 0
+      Position: {x: -120.46826, y: -443.3413}
+    - StrokeID: 0
+      Position: {x: -120.46509, y: -443.32544}
+    - StrokeID: 0
+      Position: {x: -120.461914, y: -443.30957}
+    - StrokeID: 0
+      Position: {x: -120.45874, y: -443.2937}
+    - StrokeID: 0
+      Position: {x: -120.45557, y: -443.27783}
+    - StrokeID: 0
+      Position: {x: -120.45239, y: -443.26196}
+    - StrokeID: 0
+      Position: {x: -120.44922, y: -443.2461}
+    - StrokeID: 0
+      Position: {x: -120.446045, y: -443.23022}
+    - StrokeID: 0
+      Position: {x: -120.44287, y: -443.21436}
+    - StrokeID: 0
+      Position: {x: -120.4397, y: -443.1985}
+    - StrokeID: 0
+      Position: {x: -120.43652, y: -443.18262}
+    - StrokeID: 0
+      Position: {x: -120.43335, y: -443.16675}
+    - StrokeID: 0
+      Position: {x: -120.430176, y: -443.15088}
+    - StrokeID: 0
+      Position: {x: -120.427, y: -443.135}
+    - StrokeID: 0
+      Position: {x: -120.42383, y: -443.11914}
+    - StrokeID: 0
+      Position: {x: -120.420654, y: -443.10327}
+    - StrokeID: 0
+      Position: {x: -120.41748, y: -443.0874}
+    - StrokeID: 0
+      Position: {x: -120.41431, y: -443.07153}
+    - StrokeID: 0
+      Position: {x: -120.41113, y: -443.05566}
+    - StrokeID: 0
+      Position: {x: -120.40796, y: -443.0398}
+    - StrokeID: 0
+      Position: {x: -120.404785, y: -443.02393}
+    - StrokeID: 0
+      Position: {x: -120.40161, y: -443.00806}
+    - StrokeID: 0
+      Position: {x: -120.39844, y: -442.9922}
+    - StrokeID: 0
+      Position: {x: -120.39526, y: -442.97632}
+    - StrokeID: 0
+      Position: {x: -120.39209, y: -442.96045}
+    - StrokeID: 0
+      Position: {x: -120.388916, y: -442.94458}
+    - StrokeID: 0
+      Position: {x: -120.38574, y: -442.9287}
+    - StrokeID: 0
+      Position: {x: -120.38257, y: -442.91284}
+    - StrokeID: 0
+      Position: {x: -120.379395, y: -442.89697}
+    - StrokeID: 0
+      Position: {x: -120.37622, y: -442.8811}
+    - StrokeID: 0
+      Position: {x: -120.37305, y: -442.86523}
+    - StrokeID: 0
+      Position: {x: -120.36987, y: -442.84937}
+    - StrokeID: 0
+      Position: {x: -120.3667, y: -442.8335}
+    - StrokeID: 0
+      Position: {x: -120.363525, y: -442.81763}
+    - StrokeID: 0
+      Position: {x: -120.36035, y: -442.80176}
+    - StrokeID: 0
+      Position: {x: -120.35718, y: -442.7859}
+    - StrokeID: 0
+      Position: {x: -120.354004, y: -442.77002}
+    - StrokeID: 0
+      Position: {x: -120.35083, y: -442.75415}
+    - StrokeID: 0
+      Position: {x: -120.34766, y: -442.73825}
+    - StrokeID: 0
+      Position: {x: -120.34448, y: -442.72238}
+    - StrokeID: 0
+      Position: {x: -120.34131, y: -442.70648}
+    - StrokeID: 0
+      Position: {x: -120.338135, y: -442.6906}
+    - StrokeID: 0
+      Position: {x: -120.33495, y: -442.6747}
+    - StrokeID: 0
+      Position: {x: -120.33178, y: -442.65884}
+    - StrokeID: 0
+      Position: {x: -120.3286, y: -442.64294}
+    - StrokeID: 0
+      Position: {x: -120.325424, y: -442.62708}
+    - StrokeID: 0
+      Position: {x: -120.32224, y: -442.61118}
+    - StrokeID: 0
+      Position: {x: -120.31907, y: -442.5953}
+    - StrokeID: 0
+      Position: {x: -120.31589, y: -442.5794}
+    - StrokeID: 0
+      Position: {x: -120.31271, y: -442.56354}
+    - StrokeID: 0
+      Position: {x: -120.30953, y: -442.54764}
+    - StrokeID: 0
+      Position: {x: -120.30636, y: -442.53177}
+    - StrokeID: 0
+      Position: {x: -120.30318, y: -442.51587}
+    - StrokeID: 0
+      Position: {x: -120.3, y: -442.5}
+    OriginalPoints:
+    - StrokeID: 0
+      Position: {x: 120, y: 98}
+    - StrokeID: 0
+      Position: {x: 121, y: 103}
+    numberOfPoints: 64
+  - Name: swirl
+    IsShown: 0
+    NormalizedPoints:
+    - StrokeID: 0
+      Position: {x: -128.04218, y: -407.20007}
+    - StrokeID: 0
+      Position: {x: -128.0486, y: -407.23224}
+    - StrokeID: 0
+      Position: {x: -128.05421, y: -407.2645}
+    - StrokeID: 0
+      Position: {x: -128.05421, y: -407.2973}
+    - StrokeID: 0
+      Position: {x: -128.05421, y: -407.3301}
+    - StrokeID: 0
+      Position: {x: -128.0353, y: -407.35626}
+    - StrokeID: 0
+      Position: {x: -128.0148, y: -407.3819}
+    - StrokeID: 0
+      Position: {x: -127.98726, y: -407.39285}
+    - StrokeID: 0
+      Position: {x: -127.95445, y: -407.39285}
+    - StrokeID: 0
+      Position: {x: -127.921646, y: -407.39285}
+    - StrokeID: 0
+      Position: {x: -127.88884, y: -407.39285}
+    - StrokeID: 0
+      Position: {x: -127.85603, y: -407.39285}
+    - StrokeID: 0
+      Position: {x: -127.82323, y: -407.39285}
+    - StrokeID: 0
+      Position: {x: -127.79042, y: -407.39285}
+    - StrokeID: 0
+      Position: {x: -127.757614, y: -407.39285}
+    - StrokeID: 0
+      Position: {x: -127.72481, y: -407.39285}
+    - StrokeID: 0
+      Position: {x: -127.69379, y: -407.3836}
+    - StrokeID: 0
+      Position: {x: -127.66333, y: -407.37143}
+    - StrokeID: 0
+      Position: {x: -127.63468, y: -407.3556}
+    - StrokeID: 0
+      Position: {x: -127.60655, y: -407.3387}
+    - StrokeID: 0
+      Position: {x: -127.58157, y: -407.3178}
+    - StrokeID: 0
+      Position: {x: -127.55837, y: -407.29462}
+    - StrokeID: 0
+      Position: {x: -127.53564, y: -407.2711}
+    - StrokeID: 0
+      Position: {x: -127.52345, y: -407.24063}
+    - StrokeID: 0
+      Position: {x: -127.511635, y: -407.21008}
+    - StrokeID: 0
+      Position: {x: -127.5052, y: -407.17792}
+    - StrokeID: 0
+      Position: {x: -127.5, y: -407.1456}
+    - StrokeID: 0
+      Position: {x: -127.5, y: -407.1128}
+    - StrokeID: 0
+      Position: {x: -127.5, y: -407.08}
+    - StrokeID: 0
+      Position: {x: -127.504, y: -407.04758}
+    - StrokeID: 0
+      Position: {x: -127.51043, y: -407.0154}
+    - StrokeID: 0
+      Position: {x: -127.5331, y: -406.9947}
+    - StrokeID: 0
+      Position: {x: -127.561226, y: -406.9778}
+    - StrokeID: 0
+      Position: {x: -127.59077, y: -406.96378}
+    - StrokeID: 0
+      Position: {x: -127.62123, y: -406.9516}
+    - StrokeID: 0
+      Position: {x: -127.65276, y: -406.94302}
+    - StrokeID: 0
+      Position: {x: -127.68494, y: -406.93658}
+    - StrokeID: 0
+      Position: {x: -127.71758, y: -406.93503}
+    - StrokeID: 0
+      Position: {x: -127.75039, y: -406.93503}
+    - StrokeID: 0
+      Position: {x: -127.783195, y: -406.93503}
+    - StrokeID: 0
+      Position: {x: -127.816, y: -406.93503}
+    - StrokeID: 0
+      Position: {x: -127.84881, y: -406.93503}
+    - StrokeID: 0
+      Position: {x: -127.881615, y: -406.93503}
+    - StrokeID: 0
+      Position: {x: -127.91442, y: -406.93503}
+    - StrokeID: 0
+      Position: {x: -127.94688, y: -406.93924}
+    - StrokeID: 0
+      Position: {x: -127.97923, y: -406.94464}
+    - StrokeID: 0
+      Position: {x: -128.0107, y: -406.95334}
+    - StrokeID: 0
+      Position: {x: -128.04141, y: -406.96487}
+    - StrokeID: 0
+      Position: {x: -128.07213, y: -406.97638}
+    - StrokeID: 0
+      Position: {x: -128.1023, y: -406.9892}
+    - StrokeID: 0
+      Position: {x: -128.13164, y: -407.00388}
+    - StrokeID: 0
+      Position: {x: -128.16098, y: -407.01852}
+    - StrokeID: 0
+      Position: {x: -128.19032, y: -407.0332}
+    - StrokeID: 0
+      Position: {x: -128.21991, y: -407.04733}
+    - StrokeID: 0
+      Position: {x: -128.25006, y: -407.06024}
+    - StrokeID: 0
+      Position: {x: -128.28021, y: -407.07318}
+    - StrokeID: 0
+      Position: {x: -128.30997, y: -407.08698}
+    - StrokeID: 0
+      Position: {x: -128.33931, y: -407.10165}
+    - StrokeID: 0
+      Position: {x: -128.36865, y: -407.11633}
+    - StrokeID: 0
+      Position: {x: -128.39772, y: -407.1315}
+    - StrokeID: 0
+      Position: {x: -128.42586, y: -407.14838}
+    - StrokeID: 0
+      Position: {x: -128.4536, y: -407.16574}
+    - StrokeID: 0
+      Position: {x: -128.4768, y: -407.18893}
+    - StrokeID: 0
+      Position: {x: -128.5, y: -407.21213}
+    OriginalPoints:
+    - StrokeID: 0
+      Position: {x: 115, y: 133}
+    - StrokeID: 0
+      Position: {x: 114, y: 128}
+    - StrokeID: 0
+      Position: {x: 114, y: 122}
+    - StrokeID: 0
+      Position: {x: 118, y: 117}
+    - StrokeID: 0
+      Position: {x: 124, y: 117}
+    - StrokeID: 0
+      Position: {x: 130, y: 117}
+    - StrokeID: 0
+      Position: {x: 136, y: 117}
+    - StrokeID: 0
+      Position: {x: 142, y: 117}
+    - StrokeID: 0
+      Position: {x: 147, y: 119}
+    - StrokeID: 0
+      Position: {x: 152, y: 122}
+    - StrokeID: 0
+      Position: {x: 157, y: 127}
+    - StrokeID: 0
+      Position: {x: 159, y: 132}
+    - StrokeID: 0
+      Position: {x: 160, y: 137}
+    - StrokeID: 0
+      Position: {x: 160, y: 144}
+    - StrokeID: 0
+      Position: {x: 159, y: 149}
+    - StrokeID: 0
+      Position: {x: 154, y: 152}
+    - StrokeID: 0
+      Position: {x: 149, y: 154}
+    - StrokeID: 0
+      Position: {x: 144, y: 155}
+    - StrokeID: 0
+      Position: {x: 138, y: 155}
+    - StrokeID: 0
+      Position: {x: 132, y: 155}
+    - StrokeID: 0
+      Position: {x: 125, y: 155}
+    - StrokeID: 0
+      Position: {x: 119, y: 154}
+    - StrokeID: 0
+      Position: {x: 111, y: 151}
+    - StrokeID: 0
+      Position: {x: 101, y: 146}
+    - StrokeID: 0
+      Position: {x: 94, y: 143}
+    - StrokeID: 0
+      Position: {x: 86, y: 139}
+    - StrokeID: 0
+      Position: {x: 81, y: 136}
+    - StrokeID: 0
+      Position: {x: 77, y: 132}
     numberOfPoints: 64

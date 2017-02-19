@@ -18,11 +18,17 @@ namespace Logic
         public override void Enter()
         {
             base.Enter();
-            m_CurrentStatus = Status.Running;
+            
             if (this.isActiveAndEnabled)
             {
+                m_CurrentStatus = Status.Running;
                 StartCoroutine("Interpolate");
             }
+            else
+            {
+                m_CurrentStatus = Status.Failure;
+            }
+            
         }
 
         public override Status UpdateNode()
