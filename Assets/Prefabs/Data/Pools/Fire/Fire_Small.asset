@@ -9,8 +9,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0e52f861143e30e479fd672a8d810f58, type: 3}
-  m_Name: WaterBombImpact
+  m_Name: Fire_Small
   m_EditorClassIdentifier: 
-  objectPrefab: {fileID: 100010, guid: 3622df40ebe443f48b3c761801bbc51c, type: 2}
+  objectPrefab: {fileID: 100008, guid: d452c87524dea094eb2d3e18552f06a8, type: 2}
   startInstances: 10
-  lifetime: 3
+  lifetime: -1

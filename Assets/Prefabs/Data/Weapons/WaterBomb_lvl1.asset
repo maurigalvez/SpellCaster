@@ -14,5 +14,5 @@ MonoBehaviour:
   Name: Magic Ball
   Speed: 25
   Damage: 100
-  ModelPoolID: WaterBombSmall
-  EffectPoolID: WaterBombImpactSmall
+  modelPool: {fileID: 11400000, guid: 38cf95ff0705dfb4b8e1e8a98bf7ceb2, type: 2}
+  effectPool: {fileID: 11400000, guid: 5d6203b7e73f266419fd0cf815baf79b, type: 2}

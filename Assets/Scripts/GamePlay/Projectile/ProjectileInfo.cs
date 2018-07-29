@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using Logic.Utilities.Pooling;
 namespace Logic
 {
     /// <summary>
@@ -7,14 +8,16 @@ namespace Logic
     /// </summary>
     [CreateAssetMenu(fileName = "NewProjectile", menuName = "Weapon/Projectile/New Projectile", order = 1)]
     public class ProjectileInfo : ItemInfo
-    {      
-        [SerializeField]
-        public float Speed = 0;
-        [SerializeField]
+    {              
+        public float Speed = 0;        
         public float Damage = 0;
-        [SerializeField]
-        public string ModelPoolID = "";
-        [SerializeField]
-        public string EffectPoolID = ""; 
+        public ObjectPoolInfo modelPool = null;        
+        public ObjectPoolInfo effectPool = null; 
+
+        public void Initialize()
+        {
+            modelPool.Initialize();
+            effectPool.Initialize();
+        }
     }
 }

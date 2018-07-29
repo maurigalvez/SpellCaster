@@ -3,6 +3,7 @@
 /// ==============================================================
 using UnityEngine;
 using System.Collections;
+using Logic.Utilities.Pooling;
 namespace Logic
 {
     /// <summary>
@@ -11,8 +12,7 @@ namespace Logic
     public class Despawn : Action
     {
         // Object to despawn
-        [SerializeField]
-        private GameObject m_Object = null;
+        [SerializeField] private GameObject m_Object = null;
 
         protected override Status UpdateNode()
         {
@@ -21,7 +21,7 @@ namespace Logic
             if (poolInstance != null)
             {
                 Debug.Log("Return " + Time.time);
-                poolInstance.Return();
+                poolInstance.Despawn();
             }
             else
             {

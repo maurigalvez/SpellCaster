@@ -14,6 +14,11 @@ namespace Logic
         [SerializeField]
         private ProjectileInfo m_NewProjectile = null;
 
+        private void Start()
+        {
+            m_NewProjectile.Initialize();
+        }
+
         protected override Status UpdateNode()
         {
             if(!m_Weapon || !m_NewProjectile)

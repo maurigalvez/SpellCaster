@@ -2,7 +2,6 @@
 /// © Mauricio Galvez ALL RIGHTS RESERVED
 /// ==============================================================
 using UnityEngine;
-using System.Collections;
 namespace Logic
 {
     /// <summary>

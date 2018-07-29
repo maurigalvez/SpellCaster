@@ -19,7 +19,7 @@ namespace Logic
 
         /// <summary>
         /// Set new text
-        /// </summary>
+        /// </summary> 
         [SerializeField]
         private string m_NewText = "";
 

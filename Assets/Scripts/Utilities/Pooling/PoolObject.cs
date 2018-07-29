@@ -1,41 +1,52 @@
-﻿/// ==============================================================
-/// © Mauricio Galvez ALL RIGHTS RESERVED
-/// ==============================================================
+﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
-using System.Collections;
-namespace Logic
+namespace Logic.Utilities.Pooling
 {
     /// <summary>
-    /// Script used to define a poolable object
+    /// Instance of pool object
     /// </summary>
     public class PoolObject : MonoBehaviour
     {
+        public System.Action onDespawn = null;
+
         /// <summary>
-        /// Reference of pool that this object belongs to
+        /// Reference to pool this object belongs to
         /// </summary>
-        [SerializeField]
-        public Pool m_Pool = null;
+        private ObjectPool m_ObjectPool = null;
 
-        public float m_Lifetime = -1f;
-
-        public void OnEnable()
+        public void Initialize(ObjectPool pool)
         {
-            if(m_Lifetime > 0)
+            m_ObjectPool = pool;
+        }
+
+        public void Despawn()
+        {
+            if(onDespawn != null)
             {
-                StartCoroutine("Delay");
+                onDespawn();
+            }
+            m_ObjectPool.Return(this.gameObject);
+        }
+
+        /// <summary>
+        /// Initialize this pool object
+        /// </summary>
+        private void Start()
+        {
+            if(m_ObjectPool.Info.lifetime != -1)
+            {
+                StartCoroutine("LifetimeDelay");
             }
         }
 
-        private IEnumerator Delay()
+        /// <summary>
+        /// Coroutine in charge of running lifetime delay
+        /// </summary>
+        private IEnumerator LifetimeDelay()
         {
-            yield return new WaitForSeconds(m_Lifetime);
-            Return();
+            yield return new WaitForSeconds(m_ObjectPool.Info.lifetime);
+            Despawn();
         }
-
-        public void Return()
-        {
-            m_Pool.ReturnInstance(this.gameObject);
-        }
-
     }
 }

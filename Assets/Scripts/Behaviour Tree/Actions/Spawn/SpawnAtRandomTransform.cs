@@ -3,6 +3,7 @@
 /// ==============================================================
 using UnityEngine;
 using System.Collections;
+using Logic.Utilities.Pooling;
 namespace Logic
 {
     /// <summary>
@@ -34,15 +35,12 @@ namespace Logic
         protected override Status UpdateNode()
         {
             // validate pools and targets
-            if(m_PoolID.Length ==0 || m_SpawnTargets.Length == 0)
+            if(m_Pool == null || m_SpawnTargets.Length == 0)
             {
                 return Status.Error;
             }           
-            if(!PoolManager.Instance.Contains(m_PoolID))
-            {
-                return Status.Failure;
-            }
-            Spawn(PoolManager.Instance.NextInstance(m_PoolID));
+           
+            Spawn(PoolManager.NextInstance(m_Pool));
             return Status.Success;
         }
 

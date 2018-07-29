@@ -3,7 +3,7 @@
 /// ==============================================================
 using UnityEngine;
 using System.Collections;
-
+using Logic.Utilities.Pooling;
 namespace Logic
 {
     /// <summary>
@@ -19,21 +19,17 @@ namespace Logic
         /// <summary>
         /// Information of this weapon
         /// </summary>
-        [SerializeField]
-        private ProjectileWeaponInfo m_WeaponInfo = null;
+        [SerializeField] private ProjectileWeaponInfo m_WeaponInfo = null;
         /// <summary>
         /// Transform of projectile spawn point
         /// </summary>
-        [SerializeField]
-        private Transform m_FireLocation = null;
+        [SerializeField] private Transform m_FireLocation = null;
 
-        [SerializeField]
-        private string m_TransformID = null;
+        [SerializeField] private string m_TransformID = null;
         /// <summary>
         /// Variable with direction of projectile
         /// </summary>
-        [SerializeField]
-        private Vector3Var m_ProjectileDirection = null;
+        [SerializeField] private Vector3Var m_ProjectileDirection = null;
 
         /// <summary>
         /// Shoot weapon
@@ -48,7 +44,7 @@ namespace Logic
             if (m_FireLocation)
             {
                 // Spawn projectile
-                GameObject instance = PoolManager.Instance.NextInstance(m_WeaponInfo.Projectile.ModelPoolID);
+                GameObject instance = PoolManager.NextInstance(m_WeaponInfo.Projectile.modelPool);
                 if (instance == null)
                 {
                     Debug.LogError("[ERROR] ProjectileWeapon : Instance from pool manager is null");

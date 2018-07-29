@@ -14,5 +14,5 @@ MonoBehaviour:
   Name: Magic Ball
   Speed: 25
   Damage: 100
-  ModelPoolID: FireProjectileSmall
-  EffectPoolID: FireImpactSmall
+  modelPool: {fileID: 11400000, guid: 495db8fa01cd56641943d0192ea5ca70, type: 2}
+  effectPool: {fileID: 11400000, guid: faac7933c23c4fd4dbcccf977c0e59b1, type: 2}

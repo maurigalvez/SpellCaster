@@ -1,85 +1,79 @@
-﻿/// ==============================================================
-/// © Mauricio Galvez ALL RIGHTS RESERVED
-/// ==============================================================
-using UnityEngine;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
-namespace Logic
-{
+using UnityEngine;
+namespace Logic.Utilities.Pooling
+{    
     /// <summary>
-    /// Manager in charge of creating pools for projectiles/VFX/Entities
+    /// Manager used to manage pooling
     /// </summary>
-    public class PoolManager : Singleton<PoolManager>
+    public class PoolManager
     {
+        static private Dictionary<System.Guid, ObjectPool> m_ObjectPools = null;
+     
         /// <summary>
-        /// List of pools that can be used to spawn objects in scene
+        /// Initializes pool info
         /// </summary>
-        [SerializeField]
-        private List<PoolInfo> m_Pools = new List<PoolInfo>();
-        /// <summary>
-        /// Dictionary to be used to save all instances of pools
-        /// </summary>
-        [SerializeField]
-        private Dictionary<string, Pool> m_PoolMap = new Dictionary<string, Pool>();
-
-        /// <summary>
-        /// Initalize PoolManager
-        /// </summary>
-        void Awake()
+        public static void InitializePool(ObjectPoolInfo poolInfo)
         {
-            StartCoroutine("Initialize");
+            if(m_ObjectPools == null)
+            {
+                m_ObjectPools = new Dictionary<System.Guid, ObjectPool>();
+            }
+            // check if there's a pool manager instance
+            if (PoolManagerController.Instance == null)
+            {
+                GameObject poolMC = new GameObject("PoolManagerController");
+                poolMC.AddComponent<PoolManagerController>();
+            }            
+            // check if pool has been already initialized
+            if(m_ObjectPools.ContainsKey(poolInfo.id))
+            {
+                return;
+            }
+            else
+            {
+                ObjectPool newPool = new ObjectPool(poolInfo);
+                m_ObjectPools.Add(poolInfo.id, newPool);
+            }
         }
 
         /// <summary>
-        /// Creates pools to use for spawning
+        /// Next instance on this pool info
         /// </summary>
-        private IEnumerator Initialize()
+        public static GameObject NextInstance(ObjectPoolInfo poolInfo)
         {
-            // Iterate through list and add to map
-            for (int pool = 0; pool < m_Pools.Count; pool++)
-            {
-                m_PoolMap.Add(m_Pools[pool].m_PoolID, new Pool(m_Pools[pool],this.transform));
-            }
-            // check if pools if empty
-            if(m_PoolMap.Count ==0)
-            {
-                Debug.LogWarning("PoolManager : Pool Map is empty!");
-            }
-            // Clear list
-            m_Pools.Clear();
-            yield return null;
+            GameObject nextInstance = m_ObjectPools[poolInfo.id].NextInstance();
+            nextInstance.SetActive(true);
+            return nextInstance;
         }
+
         /// <summary>
-        /// check if pool manager contains given pool id
+        /// Next instance on this pool info
         /// </summary>
-        /// <param name="m_PoolID"></param>
-        /// <returns></returns>
-        public bool Contains(string m_PoolID)
+        public static GameObject NextInstance(ObjectPoolInfo poolInfo, Vector3 position)
         {
-            return m_PoolMap.ContainsKey(m_PoolID);
+            GameObject nextInstance = m_ObjectPools[poolInfo.id].NextInstance();
+            nextInstance.transform.position = position;
+            nextInstance.SetActive(true);
+            return nextInstance;
         }
+
         /// <summary>
-        /// Returns next available instance in pool with given ID. If ID is invalid, or not enough instances are available, it returns null.
+        /// Next instance on this pool info
         /// </summary>
-        /// <param name="m_PoolID">ID of pool to grab next instance from.</param>
-        /// <returns>Next available instance in pool with given ID. If ID is invalid, or not enough instances are available, it returns null</returns>
-        public GameObject NextInstance(string m_PoolID)
+        public static GameObject NextInstance(ObjectPoolInfo poolInfo, Vector3 position, Quaternion rotation)
         {
-            // check if pools if empty
-            if (m_PoolMap.Count == 0)
-            {
-                Debug.LogWarning("PoolManager : Pool Map is empty. Returning null");
-                return null;
-            }
-            // Obtain gameobject instance
-            Pool pool = null;
-            m_PoolMap.TryGetValue(m_PoolID, out pool);
-            if(pool == null)
-            {
-                Debug.LogError("PoolManager: Pool with ID " + m_PoolID + " was not found. Returning null.");
-                return null;
-            }
-            return pool.NextInstance();
+            GameObject nextInstance = NextInstance(poolInfo, position);
+            nextInstance.transform.rotation = rotation;
+            return nextInstance;
+        }
+        
+        /// <summary>
+        /// Reset object pools
+        /// </summary>
+        public static void ResetPools()
+        {
+            m_ObjectPools = null;
         }
     }
 }

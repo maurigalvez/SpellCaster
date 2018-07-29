@@ -8,11 +8,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9259c5663e9fca74c939acb1c60e0eef, type: 3}
+  m_Script: {fileID: 11500000, guid: 0e52f861143e30e479fd672a8d810f58, type: 3}
   m_Name: WaterBomb
   m_EditorClassIdentifier: 
-  m_PoolID: WaterBomb
-  m_ObjectPrefab: {fileID: 157264, guid: 7252d67658066af47bec6ca53e149df0, type: 2}
-  m_InstanceNumber: 10
-  m_LifeTime: -1
-  m_ParentToManager: 1
+  objectPrefab: {fileID: 100012, guid: 66c82d9619f8fa84082050790b8584b9, type: 2}
+  startInstances: 10
+  lifetime: -1

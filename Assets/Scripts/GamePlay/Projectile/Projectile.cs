@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using Logic.Utilities.Pooling;
 namespace Logic
 {
     /// <summary>
@@ -39,9 +40,9 @@ namespace Logic
         protected virtual void OnCollisionEnter(Collision other)
         {
             // Spawn projectile effect
-            if(m_ProjectileInfo.EffectPoolID.Length != 0)
+            if (m_ProjectileInfo.effectPool != null)
             {
-                GameObject effect = PoolManager.Instance.NextInstance(m_ProjectileInfo.EffectPoolID);
+                GameObject effect = PoolManager.NextInstance(m_ProjectileInfo.effectPool);
                 // position effect on collision point
                 if(effect != null)
                 {
@@ -61,7 +62,7 @@ namespace Logic
             PoolObject poolObject = this.GetComponent<PoolObject>();
             if (poolObject != null)
             {
-                poolObject.Return();
+                poolObject.Despawn();
             }
             else
             {
