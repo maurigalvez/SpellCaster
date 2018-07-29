@@ -8,7 +8,7 @@ namespace Logic
     /// <summary>
     /// Class used to Action Behaviour nodes. Which will be events that can be fired for gameplay and applicaiton flow purposes
     /// </summary>
-    public abstract class Action : BehaviourNode
+    public abstract class Action : EventNode
     {
         
     }

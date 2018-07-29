@@ -26,7 +26,7 @@ namespace Logic
         [SerializeField]
         private LoadSceneMode m_LoadSceneMode = LoadSceneMode.Single;
 
-        public override Status UpdateNode()
+        protected override Status UpdateNode()
         {
             if(m_LoadMode == Mode.Default)
             {

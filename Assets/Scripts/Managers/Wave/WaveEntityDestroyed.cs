@@ -8,7 +8,7 @@ namespace Logic
     /// </summary>
     public class WaveEntityDestroyed : Action
     {
-        public override Status UpdateNode()
+        protected override Status UpdateNode()
         {
             WaveManager.Instance.WaveEntityDestroyed();
             return Status.Success;

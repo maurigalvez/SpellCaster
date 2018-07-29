@@ -16,7 +16,7 @@ namespace Logic
         [SerializeField]
         public string GestureName = null;
         [SerializeField]
-        public BehaviourNode OnRecognize = null;
+        public EventNode OnRecognize = null;
     }
 
     public class GestureMap : MonoBehaviour
@@ -25,7 +25,7 @@ namespace Logic
         public List<GestureEvent> GestureEvents = new List<GestureEvent>();
 
         [SerializeField]
-        private Dictionary<string, BehaviourNode> m_GestureEventMap;
+        private Dictionary<string, EventNode> m_GestureEventMap;
 
         [SerializeField]
         public Vector3Var m_GestureCenter = null;
@@ -48,7 +48,7 @@ namespace Logic
         private void OnGestureRecognition(Gesture gesture, Result result)
         {
             // obtain node to run
-            BehaviourNode gestureEvent = null;
+            EventNode gestureEvent = null;
             if(m_GestureEventMap.TryGetValue(result.Name,out gestureEvent))
             {
                 if(m_GestureCenter)
@@ -65,7 +65,7 @@ namespace Logic
         /// </summary>
         private IEnumerator InitializeMap()
         {
-            m_GestureEventMap = new Dictionary<string, BehaviourNode>();           
+            m_GestureEventMap = new Dictionary<string, EventNode>();           
             for (int gestureIndex = 0; gestureIndex < GestureEvents.Count; gestureIndex++)
             {               
                 m_GestureEventMap.Add(GestureEvents[gestureIndex].GestureName, GestureEvents[gestureIndex].OnRecognize);

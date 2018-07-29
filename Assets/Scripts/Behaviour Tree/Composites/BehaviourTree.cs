@@ -12,7 +12,7 @@ namespace Logic
     public class BehaviourTree : MonoBehaviour
     {
         [SerializeField]
-        private List<BehaviourNode> m_Children = new List<BehaviourNode>();
+        private List<EventNode> m_Children = new List<EventNode>();
 
         void OnEnable()
         {
@@ -25,22 +25,22 @@ namespace Logic
 
         private IEnumerator UpdateTree()
         {            
-            BehaviourNode.Status status = BehaviourNode.Status.Success;
+            Status status = Status.Success;
             int currentChild = 0;
             // enter first child
             m_Children[currentChild].Enter();
-            while (status != BehaviourNode.Status.Error)
+            while (status != Status.Error)
             {               
                 // obtain status of current child
-                status = m_Children[currentChild].UpdateNode();
+                m_Children[currentChild].Execute(ref status);
                 // parse status
                 switch(status)
                 {
-                    case BehaviourNode.Status.Error:
+                    case Status.Error:
                         Debug.LogError("There was an error when updating child " + m_Children[currentChild].name);                          
                         break;
 
-                    case BehaviourNode.Status.Running:
+                    case Status.Continue:
                         yield return new WaitForEndOfFrame();
                         break;
 

@@ -17,7 +17,7 @@ namespace Logic
         [SerializeField]
         private bool m_IsEnabled = false;
 
-        public override Status UpdateNode()
+        protected override Status UpdateNode()
         {
             if(m_Objects.Length == 0)
             {

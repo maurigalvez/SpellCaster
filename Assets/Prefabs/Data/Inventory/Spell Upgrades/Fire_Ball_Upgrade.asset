@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3642d2d5d77ba564992649b7a78601b2, type: 3}
+  m_Name: Fire_Ball_Upgrade
+  m_EditorClassIdentifier: 
+  ID: FireBall
+  Upgrades:
+  - info: {fileID: 11400000, guid: eca8b0b67cbe819489de3ef83785fe2f, type: 2}
+    cost: 0
+  - info: {fileID: 11400000, guid: 1fce8d84c2520e5419af6341185c0c63, type: 2}
+    cost: 100
+  - info: {fileID: 11400000, guid: c26250bfafae3774cb4620e6b60a48cd, type: 2}
+    cost: 500
+  CurrentUpgradeIndex: 0

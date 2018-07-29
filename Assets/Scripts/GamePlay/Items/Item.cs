@@ -3,10 +3,10 @@ using System.Collections;
 namespace Logic
 {
     /// <summary>
-    /// Weapon behaviour
+    /// Abstract class used to define equipabble/usable items
     /// </summary>
-    public abstract class Weapon : MonoBehaviour
-    {      
+    public abstract class Item : MonoBehaviour
+    {
         /// <summary>
         /// Use this weapon
         /// </summary>

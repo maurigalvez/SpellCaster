@@ -9,10 +9,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c76dad44197ca5340abd2ee56e30f874, type: 3}
-  m_Name: MagicBall
+  m_Name: FireBall_lvl1
   m_EditorClassIdentifier: 
   Name: Magic Ball
   Speed: 25
   Damage: 100
-  ModelPoolID: FireProjectile
-  EffectPoolID: FireImpact
+  ModelPoolID: FireProjectileSmall
+  EffectPoolID: FireImpactSmall

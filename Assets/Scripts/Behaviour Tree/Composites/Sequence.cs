@@ -12,12 +12,12 @@ namespace Logic
     /// When it returns failure then it stops.
     /// </summary>
 
-    public class Sequence : BehaviourNode
+    public class Sequence : EventNode
     {
         [SerializeField]
-        protected List<BehaviourNode> m_Actions = new List<BehaviourNode>();
+        protected List<EventNode> m_Actions = new List<EventNode>();
 
-        public override Status UpdateNode()
+        protected override Status UpdateNode()
         {
             Status status = Status.Success;
             // Check if there's actions
@@ -31,7 +31,7 @@ namespace Logic
                 // enter action
                 m_Actions[currentAction].Enter();
                 // update action
-                status = m_Actions[currentAction].UpdateNode();
+                m_Actions[currentAction].Execute(ref status);
                 if (status != Status.Success)
                 {
                     return status;

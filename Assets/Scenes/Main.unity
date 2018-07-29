@@ -2289,6 +2289,37 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 469751693}
+--- !u!1 &509802286
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 509802287}
+  m_Layer: 0
+  m_Name: Fire Spell
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &509802287
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 509802286}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 1437969986}
+  - {fileID: 1904614146}
+  - {fileID: 1844608032}
+  m_Father: {fileID: 750858358}
+  m_RootOrder: 0
 --- !u!1 &515111018
 GameObject:
   m_ObjectHideFlags: 0
@@ -2721,7 +2752,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 750858358}
-  m_RootOrder: 5
+  m_RootOrder: 3
 --- !u!114 &623175228
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3053,10 +3084,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
+  - {fileID: 509802287}
   - {fileID: 1196779972}
-  - {fileID: 1437969986}
-  - {fileID: 1904614146}
-  - {fileID: 1844608032}
   - {fileID: 1995058994}
   - {fileID: 623175227}
   - {fileID: 1781601641}
@@ -4470,7 +4499,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 750858358}
-  m_RootOrder: 0
+  m_RootOrder: 1
 --- !u!1 &1219082085
 GameObject:
   m_ObjectHideFlags: 0
@@ -5408,12 +5437,12 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1437969985}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.4858229, y: 0.34135106, z: 1.0681794}
+  m_LocalPosition: {x: -0.48583984, y: 0.3413391, z: 1.0681794}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
-  m_Father: {fileID: 750858358}
-  m_RootOrder: 1
+  m_Father: {fileID: 509802287}
+  m_RootOrder: 0
 --- !u!114 &1437969987
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6008,7 +6037,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 750858358}
-  m_RootOrder: 6
+  m_RootOrder: 4
 --- !u!114 &1781601642
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6355,12 +6384,12 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1844608031}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.4858229, y: 0.34135106, z: 1.0681794}
+  m_LocalPosition: {x: -0.48583984, y: 0.3413391, z: 1.0681794}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
-  m_Father: {fileID: 750858358}
-  m_RootOrder: 3
+  m_Father: {fileID: 509802287}
+  m_RootOrder: 2
 --- !u!114 &1844608033
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6466,7 +6495,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 750858358}
-  m_RootOrder: 7
+  m_RootOrder: 5
 --- !u!114 &1865384839
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6873,12 +6902,12 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1904614145}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.4858229, y: 0.34135106, z: 1.0681794}
+  m_LocalPosition: {x: -0.48583984, y: 0.3413391, z: 1.0681794}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
-  m_Father: {fileID: 750858358}
-  m_RootOrder: 2
+  m_Father: {fileID: 509802287}
+  m_RootOrder: 1
 --- !u!114 &1904614147
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7406,7 +7435,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 750858358}
-  m_RootOrder: 4
+  m_RootOrder: 2
 --- !u!114 &1995058995
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7424,6 +7453,10 @@ MonoBehaviour:
   - {fileID: 11400000, guid: c1d443593d294d24bab5feef36bd58e8, type: 2}
   - {fileID: 11400000, guid: 38cf95ff0705dfb4b8e1e8a98bf7ceb2, type: 2}
   - {fileID: 11400000, guid: 5d6203b7e73f266419fd0cf815baf79b, type: 2}
+  - {fileID: 11400000, guid: 2ee964ed5c672eb4182963a130ee2827, type: 2}
+  - {fileID: 11400000, guid: ac7339ffbd53c5c4b98fdbc6286f4f3a, type: 2}
+  - {fileID: 11400000, guid: 4874183f883ca6e4cbb39278256f04eb, type: 2}
+  - {fileID: 11400000, guid: 93355be55b3666b45bacc94129e6dd93, type: 2}
 --- !u!1 &2008042914
 GameObject:
   m_ObjectHideFlags: 0

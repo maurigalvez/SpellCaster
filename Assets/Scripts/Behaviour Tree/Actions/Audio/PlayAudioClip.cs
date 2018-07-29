@@ -23,7 +23,7 @@ namespace Logic
         [SerializeField]
         public bool m_PlayRandomClip = false;
 
-        public override Status UpdateNode()
+        protected override Status UpdateNode()
         {
             // validate source
             if (m_AudioSource == null)

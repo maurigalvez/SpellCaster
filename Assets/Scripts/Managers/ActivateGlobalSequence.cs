@@ -10,7 +10,7 @@ namespace Logic
         [SerializeField]
         private string m_SequenceID = "";
 
-        public override Status UpdateNode()
+        protected override Status UpdateNode()
         {
             if(m_SequenceID.Length == 0)
             {

@@ -23,7 +23,7 @@ namespace Logic
         [SerializeField]
         private string m_NewText = "";
 
-        public override Status UpdateNode()
+        protected override Status UpdateNode()
         {
             if(m_TextField == null)
             {

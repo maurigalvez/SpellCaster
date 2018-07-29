@@ -36,7 +36,7 @@ namespace Logic
         [SerializeField]
         public bool m_BoolValue = false;
 
-        public override Status UpdateNode()
+        protected override Status UpdateNode()
         {
             // validate
             if(m_Animator == null)

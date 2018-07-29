@@ -18,7 +18,7 @@ namespace Logic
         [SerializeField]
         private LoadSceneMode m_LoadSceneMode = LoadSceneMode.Single;
 
-        public override Status UpdateNode()
+        protected override Status UpdateNode()
         {
             SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex, m_LoadSceneMode);
             return Status.Success;

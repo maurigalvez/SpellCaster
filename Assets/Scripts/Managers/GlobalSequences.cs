@@ -62,8 +62,10 @@ namespace Logic
 
         private IEnumerator RunSequence(Sequence sequence)
         {
-            while(sequence.UpdateNode() == BehaviourNode.Status.Running)
+            Status status = Status.Continue;
+            while(status == Status.Continue)
             {
+                sequence.Execute(ref status);
                 yield return new WaitForFixedUpdate();
             }
         }

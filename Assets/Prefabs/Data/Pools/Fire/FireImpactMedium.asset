@@ -9,10 +9,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9259c5663e9fca74c939acb1c60e0eef, type: 3}
-  m_Name: FireProjectile
+  m_Name: FireImpactMedium
   m_EditorClassIdentifier: 
-  m_PoolID: FireProjectile
-  m_ObjectPrefab: {fileID: 141582, guid: 11306af72e9741044bdf0bbbcc5c69de, type: 2}
+  m_PoolID: FireImpactSmall
+  m_ObjectPrefab: {fileID: 100010, guid: 87698b9d467306440a17655d9c528f3a, type: 2}
   m_InstanceNumber: 10
-  m_LifeTime: -1
+  m_LifeTime: 1
   m_ParentToManager: 1

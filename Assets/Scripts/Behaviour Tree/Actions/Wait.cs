@@ -67,14 +67,14 @@ namespace Logic
             StartCoroutine("UpdateTimer");
         }
 
-        public override Status UpdateNode()
+        protected override Status UpdateNode()
         {
             return m_CurrentStatus;
         }
 
         private IEnumerator UpdateTimer()
         {
-            m_CurrentStatus = Status.Running;
+            m_CurrentStatus = Status.Continue;
             yield return new WaitForSeconds(m_TimeInSeconds);
             m_CurrentStatus = Status.Success;
         }

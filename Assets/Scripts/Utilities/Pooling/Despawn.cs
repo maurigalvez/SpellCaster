@@ -14,7 +14,7 @@ namespace Logic
         [SerializeField]
         private GameObject m_Object = null;
 
-        public override Status UpdateNode()
+        protected override Status UpdateNode()
         {
             PoolObject poolInstance = m_Object.GetComponent<PoolObject>();
             // validate 

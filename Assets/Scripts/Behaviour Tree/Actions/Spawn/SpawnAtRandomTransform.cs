@@ -31,7 +31,7 @@ namespace Logic
         [SerializeField]
         private bool m_ApplyTransformRotation = false;
 
-        public override Status UpdateNode()
+        protected override Status UpdateNode()
         {
             // validate pools and targets
             if(m_PoolID.Length ==0 || m_SpawnTargets.Length == 0)

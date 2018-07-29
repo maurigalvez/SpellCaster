@@ -23,7 +23,7 @@ namespace Logic
         /// Must be overriden. Otherwise it throws NotImplementedException
         /// </summary>
         /// <returns>Not Implemented Exception</returns>
-        public override Status UpdateNode()
+        protected override Status UpdateNode()
         {
             throw new NotImplementedException();
         }

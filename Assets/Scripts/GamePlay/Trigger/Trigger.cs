@@ -18,7 +18,7 @@ namespace Logic
             for(int currentAction = 0; currentAction < m_Actions.Length; currentAction++)
             {
                 m_Actions[currentAction].Enter();
-                m_Actions[currentAction].UpdateNode();
+                m_Actions[currentAction].Execute();
                 m_Actions[currentAction].Exit();
             }
         }

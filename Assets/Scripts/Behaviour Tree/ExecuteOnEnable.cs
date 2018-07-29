@@ -5,7 +5,7 @@ namespace Logic
     public class ExecuteOnEnable : MonoBehaviour
     {
         [SerializeField]
-        private BehaviourNode m_EventToExecute = null;
+        private EventNode m_EventToExecute = null;
 
         private void OnEnable()
         {

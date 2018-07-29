@@ -9,9 +9,9 @@ namespace Logic
     /// <summary>
     /// BehaviourNode that will be used to define condition behaviour nodes
     /// </summary>
-    public abstract class Condition : BehaviourNode
+    public abstract class Condition : EventNode
     {
-        public override Status UpdateNode()
+        protected override Status UpdateNode()
         {
             return ValidateCondition();
         }

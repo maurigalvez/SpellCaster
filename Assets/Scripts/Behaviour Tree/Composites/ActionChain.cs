@@ -9,7 +9,7 @@ namespace Logic
 
         private bool m_IsExecuting = false;
 
-        public override Status UpdateNode()
+        protected override Status UpdateNode()
         {
             Status status = Status.Success;
             // Check if there's actions
@@ -26,9 +26,9 @@ namespace Logic
                     m_Actions[m_CurrentAction].Enter();
                 }
                 // update action
-                status = m_Actions[m_CurrentAction].UpdateNode();
+                m_Actions[m_CurrentAction].Execute(ref status);
                 // check if should keep running
-                if(status == Status.Running)
+                if(status == Status.Continue)
                 {
                     return status;
                 }
@@ -71,10 +71,10 @@ namespace Logic
                     m_Actions[m_CurrentAction].Enter();
                 }
                 // update action
-                status = m_Actions[m_CurrentAction].UpdateNode();
+                m_Actions[m_CurrentAction].Execute(ref status);
                 switch (status)
                 {
-                    case Status.Running:
+                    case Status.Continue:
                         yield return new WaitForEndOfFrame();
                         break;
                     case Status.Success:

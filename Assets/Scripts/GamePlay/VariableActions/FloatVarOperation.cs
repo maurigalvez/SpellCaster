@@ -23,7 +23,7 @@ namespace Logic
         [SerializeField]
         private FloatVar m_Result = null;
 
-        public override Status UpdateNode()
+        protected override Status UpdateNode()
         {
             if(m_LeftNumber == null || m_RightNumber == null || m_Result == null)
             {

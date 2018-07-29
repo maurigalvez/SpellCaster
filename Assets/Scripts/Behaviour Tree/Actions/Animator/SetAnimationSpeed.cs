@@ -12,15 +12,12 @@ namespace Logic
         private Animator m_Animator = null;
 
         [SerializeField]
-        private string m_AnimationState = "";
-
-        [SerializeField]
         private float m_PlaybackSpeed = 1.0f;
 
         [SerializeField]
         private Vector2 m_SpeedRange = Vector2.zero;
 
-        public override Status UpdateNode()
+        protected override Status UpdateNode()
         {
             // validate
             if(m_Animator == null)

@@ -21,7 +21,7 @@ namespace Logic
             
             if (this.isActiveAndEnabled)
             {
-                m_CurrentStatus = Status.Running;
+                m_CurrentStatus = Status.Continue;
                 StartCoroutine("Interpolate");
             }
             else
@@ -31,7 +31,7 @@ namespace Logic
             
         }
 
-        public override Status UpdateNode()
+        protected override Status UpdateNode()
         {
             return m_CurrentStatus;
         }

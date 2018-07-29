@@ -16,7 +16,7 @@ namespace Logic
         [SerializeField]
         private GameManager.GameState m_NewGameState;
 
-        public override Status UpdateNode()
+        protected override Status UpdateNode()
         {
             GameManager.Instance.State = m_NewGameState;
             return Status.Success;

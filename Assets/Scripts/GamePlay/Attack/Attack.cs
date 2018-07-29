@@ -20,7 +20,7 @@ namespace Logic
         [SerializeField]
         protected Entity m_Recipient = null;
 
-        public override Status UpdateNode()
+        protected override Status UpdateNode()
         {
             return ExecuteAttack();
         }

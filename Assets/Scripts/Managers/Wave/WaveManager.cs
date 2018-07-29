@@ -85,11 +85,6 @@ namespace Logic
         private Sequence m_EndSequence = null;
 
         /// <summary>
-        /// Time in seconds until next spawn action execution
-        /// </summary>
-        private float m_TimeUntilNextSpawn = 0;
-
-        /// <summary>
         /// Number of entities spawned that were destroyed
         /// </summary>
         private int m_WaveEntitiesDestroyed = 0;
@@ -183,7 +178,7 @@ namespace Logic
                     spawnedEnemies++;
                     // fire spawn action 
                     m_SpawnAction.Enter();
-                    m_SpawnAction.UpdateNode();
+                    m_SpawnAction.Execute();
                     m_SpawnAction.Exit();
                     // calculate next spawn time
                     nextSpawnTime = Random.Range(m_SpawnStages[m_CurrentSpawnStage].SpawnRate.x, m_SpawnStages[m_CurrentSpawnStage].SpawnRate.y);
@@ -236,7 +231,7 @@ namespace Logic
             {
                 if (m_EndSequence != null)
                 {
-                    m_EndSequence.UpdateNode();
+                    m_EndSequence.Execute();
                 }
             }
             else
@@ -244,13 +239,13 @@ namespace Logic
                 // Launch waitfor wave sequence
                 if (m_OnWaitForWave != null)
                 {
-                    m_OnWaitForWave.UpdateNode();
+                    m_OnWaitForWave.Execute();
                 }
                 yield return new WaitForSeconds(m_DelayBeforeWave);
                 // Launch on wave begins sequence
                 if(m_OnWaveBegins != null)
                 {
-                    m_OnWaveBegins.UpdateNode();
+                    m_OnWaveBegins.Execute();
                 }
                 StartCoroutine("UpdateWave");
             }

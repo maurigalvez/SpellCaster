@@ -14,7 +14,7 @@ namespace Logic
         [SerializeField]
         private ProjectileInfo m_NewProjectile = null;
 
-        public override Status UpdateNode()
+        protected override Status UpdateNode()
         {
             if(!m_Weapon || !m_NewProjectile)
             {
